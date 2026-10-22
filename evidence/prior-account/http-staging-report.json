@@ -1,0 +1,12 @@
+{
+  "checkedAt": "2026-10-22T18:28:41.226Z",
+  "endpoint": "https://cave-motion-staging.srshah19.workers.dev/mcp",
+  "snapshot": "2026-10-22.58155e5cbc53",
+  "transport": "Streamable HTTP",
+  "runtime": "deployed",
+  "protocol": "passed",
+  "warmSearchSamples": 60,
+  "p95Milliseconds": 96.04,
+  "requestLimits": "passed",
+  "nativeEditorClients": "not tested by this protocol script"
+}

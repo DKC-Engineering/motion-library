@@ -1,0 +1,63 @@
+[
+  {
+    "id": "yihui",
+    "repository": "yihui-dev/awesome-opus5-5-videos",
+    "paths": ["data/videos.json"],
+    "rights": "review-required"
+  },
+  {
+    "id": "opusvideo",
+    "repository": "opusvideo/awesome-claude-video",
+    "paths": ["cases.json"],
+    "rights": "review-required"
+  },
+  {
+    "id": "guanmo",
+    "repository": "guanmo-ai/awesome-ai-motion",
+    "paths": ["data"],
+    "rights": "third-party-excluded"
+  },
+  {
+    "id": "tripo",
+    "repository": "TripoGrowthLab/awesome-opus-5-5-prompts",
+    "paths": ["catalog.config.mjs"],
+    "rights": "third-party-excluded"
+  },
+  {
+    "id": "lemo-opuscar",
+    "repository": "lemomo-ai/lemo-opuscar",
+    "adapter": "file-inventory",
+    "paths": ["styles/*/STYLE.md", "styleboard/opuscar98_styles.json"],
+    "excludePaths": ["styles/_template/STYLE.md"],
+    "rights": "review-required",
+    "licenseEvidence": ["README.md#licence", "LICENSE"],
+    "notes": "Code and docs are MIT. Demo films and stills are CC BY 4.0 with three voice-track exclusions; demo assets retain their own licenses. Inventory the separate 98-film style catalog without importing it."
+  },
+  {
+    "id": "mg-styles-15",
+    "repository": "Vincentwei1021/mg-styles-15",
+    "adapter": "file-inventory",
+    "paths": ["prompts/*.md"],
+    "rights": "review-required",
+    "licenseEvidence": ["README.md#license", "LICENSE"],
+    "notes": "The README explicitly includes project prompts, docs, code and films under MIT. Third-party assets retain separate licenses."
+  },
+  {
+    "id": "pdoom-video",
+    "repository": "mexicat/pdoom-video",
+    "adapter": "file-inventory",
+    "paths": ["docs/ENGINE.md", "docs/TREATMENT.md"],
+    "rights": "review-required",
+    "licenseEvidence": ["README.md#license", "LICENSE"],
+    "notes": "Implementation reference. Code is MIT; song, lyrics and lyric timing data are excluded. Do not import audio, lyrics or bundled fonts through this source."
+  },
+  {
+    "id": "claude-animation-base",
+    "repository": "JohnHeibel/ClaudeAnimationBase",
+    "adapter": "file-inventory",
+    "paths": ["ANIMATION_GUIDE.md"],
+    "rights": "review-required",
+    "licenseEvidence": ["LICENSE", "README.md"],
+    "notes": "MIT character-animation starter using p5.js and p5.brush. Review character and asset use, external dependency licenses, Chrome/ffmpeg requirements and GPU limits before adapting."
+  }
+]

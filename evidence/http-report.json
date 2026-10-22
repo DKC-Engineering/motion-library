@@ -1,0 +1,12 @@
+{
+  "checkedAt": "2026-10-22T18:16:23.180Z",
+  "endpoint": "http://127.0.0.1:8787/mcp",
+  "snapshot": "2026-10-22.041fe1619ff4",
+  "transport": "Streamable HTTP",
+  "runtime": "local Cloudflare workerd",
+  "protocol": "passed",
+  "warmSearchSamples": 60,
+  "p95Milliseconds": 5.73,
+  "requestLimits": "passed",
+  "nativeEditorClients": "not tested by this protocol script"
+}

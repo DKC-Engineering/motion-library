@@ -1,0 +1,51 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "cave-motion",
+  "main": "src/worker.ts",
+  "account_id": "e2e259539144a183b4a9d5111a421825",
+  "compatibility_date": "2026-10-22",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "preview_urls": false,
+  "assets": {
+    "directory": "./public",
+    "run_worker_first": ["/mcp", "/health"],
+  },
+  // Add a custom-domain route only after its DNS/hosting setup is complete.
+  "routes": [],
+  "vars": {
+    "PUBLIC_HOST": "cave-motion.darkknightcave.workers.dev",
+    "ENABLED": "true",
+  },
+  // Use the account plan's CPU limit. A custom cpu_ms setting requires Paid.
+  "observability": { "enabled": false },
+  "analytics_engine_datasets": [
+    { "binding": "ANALYTICS_ENGINE", "dataset": "analytic_events" },
+  ],
+  "ratelimits": [
+    {
+      "name": "MOTION_RATE_LIMITER",
+      "namespace_id": "1001",
+      "simple": { "limit": 120, "period": 60 },
+    },
+  ],
+  "env": {
+    "staging": {
+      "name": "cave-motion-staging",
+      "workers_dev": true,
+      "routes": [],
+      "vars": {
+        "PUBLIC_HOST": "cave-motion-staging.darkknightcave.workers.dev",
+        "ENABLED": "true",
+      },
+      "analytics_engine_datasets": [],
+      "ratelimits": [
+        {
+          "name": "MOTION_RATE_LIMITER",
+          "namespace_id": "1002",
+          "simple": { "limit": 120, "period": 60 },
+        },
+      ],
+    },
+  },
+}

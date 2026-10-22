@@ -1,0 +1,10 @@
+node_modules/
+dist/
+public/
+.wrangler/
+review/
+*.tgz
+.env*
+!.env.example
+*.log
+.DS_Store

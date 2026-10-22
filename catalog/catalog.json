@@ -1,0 +1,4175 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-22.105bd97e16a9",
+  "updatedAt": "2026-10-22",
+  "recipes": [
+    {
+      "id": "magnetic-button",
+      "version": "1.0.0",
+      "title": "Magnetic button",
+      "category": "ui",
+      "stack": "css",
+      "summary": "A button follows a nearby pointer and settles back on release.",
+      "tags": [
+        "hover",
+        "spring",
+        "pointer",
+        "microinteraction",
+        "attraction"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 2,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Measure the pointer relative to the button center. Clamp translation to 8px and ease back to zero when the pointer leaves. Keep the hit area fixed, use transform only on an inner surface, and preserve a visible keyboard focus ring.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Measure the pointer relative to the button center. Clamp translation to 8px and ease back to zero when the pointer leaves. Keep the hit area fixed, use transform only on an inner surface, and preserve a visible keyboard focus ring.",
+        "Implement idle, active, keyboard, touch, reduced-motion, and failure states as relevant.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting modern CSS"
+        ],
+        "assets": [
+          "Supply final text, real data, and cleared product assets where requested."
+        ]
+      },
+      "limitations": [
+        "Do not move the actual hit target. Touch and reduced-motion users get a stationary button.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "reproduced",
+        "date": "2026-10-22",
+        "model": "Codex; model identifier not exposed in the build environment",
+        "stack": "HTML/CSS",
+        "recipeVersion": "1.0.0",
+        "implementationHash": "sha256:39180ce652d981232f9c552abcc1bce46c1f9299fdc937aa80fb45e23ebced61",
+        "evidence": "evidence/posters/magnetic-button.png",
+        "limitations": [
+          "Reference implemented during this Codex session; not an independent model benchmark.",
+          "Demo copy and numeric values are illustrative.",
+          "Browser checks cover Chromium desktop, mobile viewport, deterministic seek, and reduced motion."
+        ]
+      },
+      "preview": {
+        "kind": "dkc-reference",
+        "url": "https://cave-motion.darkknightcave.workers.dev/motion-library/demos/index.html?id=magnetic-button",
+        "poster": "/motion-library/posters/magnetic-button.png",
+        "note": "DKC reference implementation; not an original creator video."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/magnetic-button"
+    },
+    {
+      "id": "morphing-toggle",
+      "version": "1.0.0",
+      "title": "Morphing toggle",
+      "category": "ui",
+      "stack": "css",
+      "summary": "A toggle knob stretches during a change of state, then returns to a circle.",
+      "tags": [
+        "switch",
+        "toggle",
+        "elastic",
+        "pill",
+        "state"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 2,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Use a real checkbox with an associated label. Move its visual thumb between two endpoints over 220ms, stretching the leading edge briefly with scaleX before settling. Keep checked state and assistive-technology state synchronized.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Use a real checkbox with an associated label. Move its visual thumb between two endpoints over 220ms, stretching the leading edge briefly with scaleX before settling. Keep checked state and assistive-technology state synchronized.",
+        "Implement idle, active, keyboard, touch, reduced-motion, and failure states as relevant.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting modern CSS"
+        ],
+        "assets": [
+          "Supply final text, real data, and cleared product assets where requested."
+        ]
+      },
+      "limitations": [
+        "The label and checked state must remain understandable without animation.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "reproduced",
+        "date": "2026-10-22",
+        "model": "Codex; model identifier not exposed in the build environment",
+        "stack": "HTML/CSS",
+        "recipeVersion": "1.0.0",
+        "implementationHash": "sha256:39180ce652d981232f9c552abcc1bce46c1f9299fdc937aa80fb45e23ebced61",
+        "evidence": "evidence/posters/morphing-toggle.png",
+        "limitations": [
+          "Reference implemented during this Codex session; not an independent model benchmark.",
+          "Demo copy and numeric values are illustrative.",
+          "Browser checks cover Chromium desktop, mobile viewport, deterministic seek, and reduced motion."
+        ]
+      },
+      "preview": {
+        "kind": "dkc-reference",
+        "url": "https://cave-motion.darkknightcave.workers.dev/motion-library/demos/index.html?id=morphing-toggle",
+        "poster": "/motion-library/posters/morphing-toggle.png",
+        "note": "DKC reference implementation; not an original creator video."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/morphing-toggle"
+    },
+    {
+      "id": "staggered-menu",
+      "version": "1.0.0",
+      "title": "Staggered menu",
+      "category": "ui",
+      "stack": "css",
+      "summary": "A compact navigation panel reveals its items in a short cascade.",
+      "tags": [
+        "navigation",
+        "stagger",
+        "menu",
+        "entrance"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 2,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Open an accessible navigation disclosure. Reveal items using opacity and a 10px vertical translation, with 35ms between items and a total sequence under 350ms. Reverse the group as one unit on close; restore focus to the trigger.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Open an accessible navigation disclosure. Reveal items using opacity and a 10px vertical translation, with 35ms between items and a total sequence under 350ms. Reverse the group as one unit on close; restore focus to the trigger.",
+        "Implement idle, active, keyboard, touch, reduced-motion, and failure states as relevant.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting modern CSS"
+        ],
+        "assets": [
+          "Supply final text, real data, and cleared product assets where requested."
+        ]
+      },
+      "limitations": [
+        "Hidden links must not remain in the tab order. Do not stagger keyboard focus.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "reproduced",
+        "date": "2026-10-22",
+        "model": "Codex; model identifier not exposed in the build environment",
+        "stack": "HTML/CSS",
+        "recipeVersion": "1.0.0",
+        "implementationHash": "sha256:39180ce652d981232f9c552abcc1bce46c1f9299fdc937aa80fb45e23ebced61",
+        "evidence": "evidence/posters/staggered-menu.png",
+        "limitations": [
+          "Reference implemented during this Codex session; not an independent model benchmark.",
+          "Demo copy and numeric values are illustrative.",
+          "Browser checks cover Chromium desktop, mobile viewport, deterministic seek, and reduced motion."
+        ]
+      },
+      "preview": {
+        "kind": "dkc-reference",
+        "url": "https://cave-motion.darkknightcave.workers.dev/motion-library/demos/index.html?id=staggered-menu",
+        "poster": "/motion-library/posters/staggered-menu.png",
+        "note": "DKC reference implementation; not an original creator video."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/staggered-menu"
+    },
+    {
+      "id": "shared-element-tab",
+      "version": "1.0.0",
+      "title": "Shared-element tabs",
+      "category": "ui",
+      "stack": "css",
+      "summary": "An underline travels between tabs without rebuilding the whole tab row.",
+      "tags": [
+        "tabs",
+        "indicator",
+        "underline",
+        "shared",
+        "layout"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 2,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Implement the ARIA tabs keyboard pattern. Measure the selected tab and animate one absolutely positioned underline to its left offset and width over 180ms. Update measurements after resize or font loading, and keep panel content stable during the transition.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Implement the ARIA tabs keyboard pattern. Measure the selected tab and animate one absolutely positioned underline to its left offset and width over 180ms. Update measurements after resize or font loading, and keep panel content stable during the transition.",
+        "Implement idle, active, keyboard, touch, reduced-motion, and failure states as relevant.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting modern CSS"
+        ],
+        "assets": [
+          "Supply final text, real data, and cleared product assets where requested."
+        ]
+      },
+      "limitations": [
+        "Selection must still work when animation is disabled and when labels wrap.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/shared-element-tab"
+    },
+    {
+      "id": "toast-stack",
+      "version": "1.0.0",
+      "title": "Toast stack",
+      "category": "ui",
+      "stack": "css",
+      "summary": "Notifications enter from one edge and make room for the next message.",
+      "tags": [
+        "notification",
+        "toast",
+        "stack",
+        "feedback"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 2,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Use one polite live region for status announcements. Enter each toast with 16px translation and opacity over 180ms, then shift existing toasts to make space. Include a dismiss button, pause expiration on hover or focus, and cap visible messages at three.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Use one polite live region for status announcements. Enter each toast with 16px translation and opacity over 180ms, then shift existing toasts to make space. Include a dismiss button, pause expiration on hover or focus, and cap visible messages at three.",
+        "Implement idle, active, keyboard, touch, reduced-motion, and failure states as relevant.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting modern CSS"
+        ],
+        "assets": [
+          "Supply final text, real data, and cleared product assets where requested."
+        ]
+      },
+      "limitations": [
+        "Urgent errors need a persistent inline home; a timed toast alone is insufficient.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/toast-stack"
+    },
+    {
+      "id": "number-flip",
+      "version": "1.0.0",
+      "title": "Number flip",
+      "category": "ui",
+      "stack": "css",
+      "summary": "A changing digit flips across a horizontal hinge like a station display.",
+      "tags": [
+        "counter",
+        "digit",
+        "flip",
+        "odometer"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 2,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Split each visual digit into clipped top and bottom halves. Rotate the outgoing upper half to 90 degrees, then rotate the incoming lower half into place over a combined 360ms. Expose one static accessible number and hide decorative digit layers from screen readers.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Split each visual digit into clipped top and bottom halves. Rotate the outgoing upper half to 90 degrees, then rotate the incoming lower half into place over a combined 360ms. Expose one static accessible number and hide decorative digit layers from screen readers.",
+        "Implement idle, active, keyboard, touch, reduced-motion, and failure states as relevant.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting modern CSS"
+        ],
+        "assets": [
+          "Supply final text, real data, and cleared product assets where requested."
+        ]
+      },
+      "limitations": [
+        "Keep the final number legible without perspective support. Avoid repeating announcements per frame.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/number-flip"
+    },
+    {
+      "id": "accordion-reveal",
+      "version": "1.0.0",
+      "title": "Accordion reveal",
+      "category": "ui",
+      "stack": "css",
+      "summary": "An answer panel opens smoothly while its heading stays in place.",
+      "tags": [
+        "faq",
+        "accordion",
+        "disclosure",
+        "height"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 2,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Use a button with aria-expanded and aria-controls. Animate a grid row from 0fr to 1fr over 200ms with overflow hidden on the inner wrapper. Fade in the answer slightly after expansion begins. Keep focus on the heading button.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Use a button with aria-expanded and aria-controls. Animate a grid row from 0fr to 1fr over 200ms with overflow hidden on the inner wrapper. Fade in the answer slightly after expansion begins. Keep focus on the heading button.",
+        "Implement idle, active, keyboard, touch, reduced-motion, and failure states as relevant.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting modern CSS"
+        ],
+        "assets": [
+          "Supply final text, real data, and cleared product assets where requested."
+        ]
+      },
+      "limitations": [
+        "Collapsed content must be inert or unmounted so it cannot receive focus.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/accordion-reveal"
+    },
+    {
+      "id": "command-palette",
+      "version": "1.0.0",
+      "title": "Command palette entrance",
+      "category": "ui",
+      "stack": "css",
+      "summary": "A search dialog appears with a small scale change and a steady input.",
+      "tags": [
+        "command",
+        "palette",
+        "dialog",
+        "search",
+        "modal"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 2,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Use a native dialog opened with showModal. Animate its surface from scale .98 and opacity zero to its final state in 140ms. Focus the search input, support Escape, and restore the opening control on close. Keep results updates separate from the entrance animation.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Use a native dialog opened with showModal. Animate its surface from scale .98 and opacity zero to its final state in 140ms. Focus the search input, support Escape, and restore the opening control on close. Keep results updates separate from the entrance animation.",
+        "Implement idle, active, keyboard, touch, reduced-motion, and failure states as relevant.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting modern CSS"
+        ],
+        "assets": [
+          "Supply final text, real data, and cleared product assets where requested."
+        ]
+      },
+      "limitations": [
+        "Never animate the entire document or hide focus behind the dialog.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/command-palette"
+    },
+    {
+      "id": "drag-card",
+      "version": "1.0.0",
+      "title": "Drag-and-settle card",
+      "category": "ui",
+      "stack": "canvas",
+      "summary": "A card follows a drag directly and springs to the nearest resting slot.",
+      "tags": [
+        "drag",
+        "snap",
+        "spring",
+        "card",
+        "gesture"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 2,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Capture the pointer on drag start and make the card follow the pointer without easing. On release, choose the closest of three slots and settle with a damped spring. Provide left and right buttons as keyboard alternatives and respect pointercancel.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Capture the pointer on drag start and make the card follow the pointer without easing. On release, choose the closest of three slots and settle with a damped spring. Provide left and right buttons as keyboard alternatives and respect pointercancel.",
+        "Implement idle, active, keyboard, touch, reduced-motion, and failure states as relevant.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting Canvas 2D"
+        ],
+        "assets": [
+          "Supply final text, real data, and cleared product assets where requested."
+        ]
+      },
+      "limitations": [
+        "Do not block vertical page scrolling before the user clearly starts a horizontal drag.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/drag-card"
+    },
+    {
+      "id": "progress-ring",
+      "version": "1.0.0",
+      "title": "Progress ring",
+      "category": "ui",
+      "stack": "svg",
+      "summary": "A circular progress indicator advances to a measured value.",
+      "tags": [
+        "progress",
+        "ring",
+        "circle",
+        "loading",
+        "status"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 2,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Draw a circle with a known circumference and animate its stroke-dashoffset to reflect real completed work. Use round caps, a fixed start angle, and an accessible progressbar value. If total work is unknown, use an indeterminate label instead of fabricating a percentage.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Draw a circle with a known circumference and animate its stroke-dashoffset to reflect real completed work. Use round caps, a fixed start angle, and an accessible progressbar value. If total work is unknown, use an indeterminate label instead of fabricating a percentage.",
+        "Implement idle, active, keyboard, touch, reduced-motion, and failure states as relevant.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting SVG"
+        ],
+        "assets": [
+          "Supply final text, real data, and cleared product assets where requested."
+        ]
+      },
+      "limitations": [
+        "Progress must reflect supplied data. Never use a fake loading loop for completed work.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/progress-ring"
+    },
+    {
+      "id": "focus-spotlight",
+      "version": "1.0.0",
+      "title": "Focus spotlight",
+      "category": "ui",
+      "stack": "css",
+      "summary": "A soft highlight follows the pointer across a group of cards.",
+      "tags": [
+        "spotlight",
+        "cursor",
+        "hover",
+        "light"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 2,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Track pointer coordinates in CSS custom properties on the container using requestAnimationFrame. Reveal a clipped radial highlight inside each hovered card while keeping text contrast unchanged. Provide an equivalent fixed border treatment on focus-visible.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Track pointer coordinates in CSS custom properties on the container using requestAnimationFrame. Reveal a clipped radial highlight inside each hovered card while keeping text contrast unchanged. Provide an equivalent fixed border treatment on focus-visible.",
+        "Implement idle, active, keyboard, touch, reduced-motion, and failure states as relevant.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting modern CSS"
+        ],
+        "assets": [
+          "Supply final text, real data, and cleared product assets where requested."
+        ]
+      },
+      "limitations": [
+        "Disable pointer tracking for coarse pointers and reduced-motion preferences.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/focus-spotlight"
+    },
+    {
+      "id": "skeleton-resolve",
+      "version": "1.0.0",
+      "title": "Skeleton-to-content reveal",
+      "category": "ui",
+      "stack": "css",
+      "summary": "A loading placeholder gives way to content without shifting the page.",
+      "tags": [
+        "skeleton",
+        "loading",
+        "reveal",
+        "layout",
+        "placeholder"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 2,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Reserve the final content dimensions in the loading skeleton. On actual data resolution, crossfade the placeholder and content over 160ms while retaining the same box. Mark the region aria-busy during loading and provide retry content on failure.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Reserve the final content dimensions in the loading skeleton. On actual data resolution, crossfade the placeholder and content over 160ms while retaining the same box. Mark the region aria-busy during loading and provide retry content on failure.",
+        "Implement idle, active, keyboard, touch, reduced-motion, and failure states as relevant.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting modern CSS"
+        ],
+        "assets": [
+          "Supply final text, real data, and cleared product assets where requested."
+        ]
+      },
+      "limitations": [
+        "A skeleton must stop when loading fails. Avoid indefinite shimmer or artificial delays.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/skeleton-resolve"
+    },
+    {
+      "id": "button-success",
+      "version": "1.0.0",
+      "title": "Button-to-success state",
+      "category": "ui",
+      "stack": "svg",
+      "summary": "A submit button changes to a check after a confirmed successful action.",
+      "tags": [
+        "submit",
+        "success",
+        "check",
+        "feedback",
+        "button"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 2,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Keep the button width fixed through idle, pending, success, and failure states. After the operation succeeds, draw an SVG check with stroke-dashoffset over 180ms and update the label. Re-enable a clear retry action on failure and announce the status once.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Keep the button width fixed through idle, pending, success, and failure states. After the operation succeeds, draw an SVG check with stroke-dashoffset over 180ms and update the label. Re-enable a clear retry action on failure and announce the status once.",
+        "Implement idle, active, keyboard, touch, reduced-motion, and failure states as relevant.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting SVG"
+        ],
+        "assets": [
+          "Supply final text, real data, and cleared product assets where requested."
+        ]
+      },
+      "limitations": [
+        "Only show success after the actual action succeeds; preserve useful error details.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/button-success"
+    },
+    {
+      "id": "kinetic-wordmark",
+      "version": "1.0.0",
+      "title": "Kinetic wordmark",
+      "category": "film",
+      "stack": "canvas",
+      "summary": "Letters arrive on a beat, hold long enough to read, and leave as a single word.",
+      "tags": [
+        "typography",
+        "wordmark",
+        "text",
+        "title",
+        "kinetic",
+        "logo"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 12,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Build a six-second, 16:9 title film. Place large type on a plain field, stagger characters by 60ms with a 24px rise and opacity, hold the assembled word for two seconds, then move it out as one group. Compute every position from time through seek(t).",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Build a six-second, 16:9 title film. Place large type on a plain field, stagger characters by 60ms with a 24px rise and opacity, hold the assembled word for two seconds, then move it out as one group. Compute every position from time through seek(t).",
+        "Expose seek(t) so frames can be inspected deterministically; add play, pause, replay, and a reduced-motion still.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting Canvas 2D"
+        ],
+        "assets": [
+          "Supply final text, real data, and cleared product assets where requested."
+        ]
+      },
+      "limitations": [
+        "Use a user-provided wordmark and licensed font. No music is required.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "reproduced",
+        "date": "2026-10-22",
+        "model": "Codex; model identifier not exposed in the build environment",
+        "stack": "Canvas 2D",
+        "recipeVersion": "1.0.0",
+        "implementationHash": "sha256:39180ce652d981232f9c552abcc1bce46c1f9299fdc937aa80fb45e23ebced61",
+        "evidence": "evidence/posters/kinetic-wordmark.png",
+        "limitations": [
+          "Reference implemented during this Codex session; not an independent model benchmark.",
+          "Demo copy and numeric values are illustrative.",
+          "Browser checks cover Chromium desktop, mobile viewport, deterministic seek, and reduced motion."
+        ]
+      },
+      "preview": {
+        "kind": "dkc-reference",
+        "url": "https://cave-motion.darkknightcave.workers.dev/motion-library/demos/index.html?id=kinetic-wordmark",
+        "poster": "/motion-library/posters/kinetic-wordmark.png",
+        "note": "DKC reference implementation; not an original creator video."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/kinetic-wordmark"
+    },
+    {
+      "id": "feature-launch",
+      "version": "1.0.0",
+      "title": "Three-feature product launch",
+      "category": "film",
+      "stack": "canvas",
+      "summary": "Three product features appear in a short launch sequence with a clear final frame.",
+      "tags": [
+        "saas",
+        "launch",
+        "product",
+        "features",
+        "promo",
+        "demo"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 12,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Build a twelve-second product film with a two-second title, three two-second feature beats, a two-second benefit summary, and a two-second closing frame. Use user-supplied screenshots or labeled neutral UI diagrams. Carry one shape between scenes using matched positions and size changes.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Build a twelve-second product film with a two-second title, three two-second feature beats, a two-second benefit summary, and a two-second closing frame. Use user-supplied screenshots or labeled neutral UI diagrams. Carry one shape between scenes using matched positions and size changes.",
+        "Expose seek(t) so frames can be inspected deterministically; add play, pause, replay, and a reduced-motion still.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting Canvas 2D"
+        ],
+        "assets": [
+          "Supply final text, real data, and cleared product assets where requested."
+        ]
+      },
+      "limitations": [
+        "Do not invent product features, testimonials, or customer logos. Screenshots must be supplied or cleared.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "reproduced",
+        "date": "2026-10-22",
+        "model": "Codex; model identifier not exposed in the build environment",
+        "stack": "Canvas 2D",
+        "recipeVersion": "1.0.0",
+        "implementationHash": "sha256:39180ce652d981232f9c552abcc1bce46c1f9299fdc937aa80fb45e23ebced61",
+        "evidence": "evidence/posters/feature-launch.png",
+        "limitations": [
+          "Reference implemented during this Codex session; not an independent model benchmark.",
+          "Demo copy and numeric values are illustrative.",
+          "Browser checks cover Chromium desktop, mobile viewport, deterministic seek, and reduced motion."
+        ]
+      },
+      "preview": {
+        "kind": "dkc-reference",
+        "url": "https://cave-motion.darkknightcave.workers.dev/motion-library/demos/index.html?id=feature-launch",
+        "poster": "/motion-library/posters/feature-launch.png",
+        "note": "DKC reference implementation; not an original creator video."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/feature-launch"
+    },
+    {
+      "id": "metric-count-up",
+      "version": "1.0.0",
+      "title": "Metric count-up",
+      "category": "film",
+      "stack": "canvas",
+      "summary": "A single supplied metric counts to its final value and holds beside its label.",
+      "tags": [
+        "number",
+        "metric",
+        "counter",
+        "statistics",
+        "count",
+        "kpi"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 12,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Build a six-second metric scene. Introduce the label, count from zero to the supplied value over 1.6 seconds using cubic ease-out, then hold the complete value with units and a source caption. Use fixed-width numerals and derive each frame from time.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Build a six-second metric scene. Introduce the label, count from zero to the supplied value over 1.6 seconds using cubic ease-out, then hold the complete value with units and a source caption. Use fixed-width numerals and derive each frame from time.",
+        "Expose seek(t) so frames can be inspected deterministically; add play, pause, replay, and a reduced-motion still.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting Canvas 2D"
+        ],
+        "assets": [
+          "Supply final text, real data, and cleared product assets where requested."
+        ]
+      },
+      "limitations": [
+        "Use real supplied data and source text. Do not imply measured business results with demo numbers.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "reproduced",
+        "date": "2026-10-22",
+        "model": "Codex; model identifier not exposed in the build environment",
+        "stack": "Canvas 2D",
+        "recipeVersion": "1.0.0",
+        "implementationHash": "sha256:39180ce652d981232f9c552abcc1bce46c1f9299fdc937aa80fb45e23ebced61",
+        "evidence": "evidence/posters/metric-count-up.png",
+        "limitations": [
+          "Reference implemented during this Codex session; not an independent model benchmark.",
+          "Demo copy and numeric values are illustrative.",
+          "Browser checks cover Chromium desktop, mobile viewport, deterministic seek, and reduced motion."
+        ]
+      },
+      "preview": {
+        "kind": "dkc-reference",
+        "url": "https://cave-motion.darkknightcave.workers.dev/motion-library/demos/index.html?id=metric-count-up",
+        "poster": "/motion-library/posters/metric-count-up.png",
+        "note": "DKC reference implementation; not an original creator video."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/metric-count-up"
+    },
+    {
+      "id": "device-slide",
+      "version": "1.0.0",
+      "title": "Device slide reveal",
+      "category": "film",
+      "stack": "canvas",
+      "summary": "A flat device frame enters while its product screen stays readable.",
+      "tags": [
+        "device",
+        "phone",
+        "mockup",
+        "screen",
+        "reveal"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 12,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Build an eight-second product screen scene. Slide a simple unbranded device outline upward by 60px with a small tilt correction, hold a user-provided screen inside it, then introduce one concise annotation. Keep the screen region at least half the frame height and avoid a fast camera move.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Build an eight-second product screen scene. Slide a simple unbranded device outline upward by 60px with a small tilt correction, hold a user-provided screen inside it, then introduce one concise annotation. Keep the screen region at least half the frame height and avoid a fast camera move.",
+        "Expose seek(t) so frames can be inspected deterministically; add play, pause, replay, and a reduced-motion still.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting Canvas 2D"
+        ],
+        "assets": [
+          "Supply final text, real data, and cleared product assets where requested."
+        ]
+      },
+      "limitations": [
+        "Use an unbranded outline unless branded assets are cleared. Long screens need a deliberate crop.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/device-slide"
+    },
+    {
+      "id": "split-screen-compare",
+      "version": "1.0.0",
+      "title": "Split-screen comparison",
+      "category": "film",
+      "stack": "canvas",
+      "summary": "Two clearly labeled states share the screen before one expands to fill it.",
+      "tags": [
+        "before",
+        "after",
+        "comparison",
+        "split",
+        "wipe"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 12,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Build a ten-second comparison with two equally sized panels and explicit labels. Hold the comparison for four seconds, move a divider to emphasize the selected state, then expand that state using a continuous crop. Keep labels outside the moving mask until the expansion completes.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Build a ten-second comparison with two equally sized panels and explicit labels. Hold the comparison for four seconds, move a divider to emphasize the selected state, then expand that state using a continuous crop. Keep labels outside the moving mask until the expansion completes.",
+        "Expose seek(t) so frames can be inspected deterministically; add play, pause, replay, and a reduced-motion still.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting Canvas 2D"
+        ],
+        "assets": [
+          "Supply final text, real data, and cleared product assets where requested."
+        ]
+      },
+      "limitations": [
+        "Avoid fabricated before-and-after claims; supplied examples need equivalent scale and framing.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/split-screen-compare"
+    },
+    {
+      "id": "logo-line-draw",
+      "version": "1.0.0",
+      "title": "Line-drawn logo reveal",
+      "category": "film",
+      "stack": "svg",
+      "summary": "A supplied line mark draws itself before its name fades into view.",
+      "tags": [
+        "logo",
+        "stroke",
+        "draw",
+        "path",
+        "brand"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 12,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Build a five-second SVG logo reveal using a user-supplied simple path. Measure total path length, animate stroke-dashoffset from full length to zero over two seconds, then reveal the name with opacity. End on a static, high-contrast lockup with adequate clear space.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Build a five-second SVG logo reveal using a user-supplied simple path. Measure total path length, animate stroke-dashoffset from full length to zero over two seconds, then reveal the name with opacity. End on a static, high-contrast lockup with adequate clear space.",
+        "Expose seek(t) so frames can be inspected deterministically; add play, pause, replay, and a reduced-motion still.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting SVG"
+        ],
+        "assets": [
+          "Supply final text, real data, and cleared product assets where requested."
+        ]
+      },
+      "limitations": [
+        "Filled or complex marks may need separate paths. Do not redraw an unlicensed trademark.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/logo-line-draw"
+    },
+    {
+      "id": "type-on",
+      "version": "1.0.0",
+      "title": "Type-on title",
+      "category": "film",
+      "stack": "canvas",
+      "summary": "A short sentence types on with a quiet caret and an unhurried hold.",
+      "tags": [
+        "typewriter",
+        "typing",
+        "text",
+        "caret",
+        "headline"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 12,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Build a seven-second title using a supplied sentence of at most 60 characters. Reveal characters by grapheme cluster at a controlled pace, add a subtle caret, then hold the complete sentence for at least two seconds. Pre-measure the final layout so wrapping does not jump during typing.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Build a seven-second title using a supplied sentence of at most 60 characters. Reveal characters by grapheme cluster at a controlled pace, add a subtle caret, then hold the complete sentence for at least two seconds. Pre-measure the final layout so wrapping does not jump during typing.",
+        "Expose seek(t) so frames can be inspected deterministically; add play, pause, replay, and a reduced-motion still.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting Canvas 2D"
+        ],
+        "assets": [
+          "Supply final text, real data, and cleared product assets where requested."
+        ]
+      },
+      "limitations": [
+        "Avoid infinite blinking. Do not reveal emoji by UTF-16 code unit.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/type-on"
+    },
+    {
+      "id": "shape-match-cut",
+      "version": "1.0.0",
+      "title": "Shape match cut",
+      "category": "film",
+      "stack": "canvas",
+      "summary": "A circle in one scene becomes the focal object in the next.",
+      "tags": [
+        "transition",
+        "match",
+        "morph",
+        "circle",
+        "handoff"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 12,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Build two four-second scenes connected by one circular shape. End the first scene with the circle at the second scene's target position and size. Interpolate position, scale, and color continuously through a one-second bridge, revealing the new scene inside its mask.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Build two four-second scenes connected by one circular shape. End the first scene with the circle at the second scene's target position and size. Interpolate position, scale, and color continuously through a one-second bridge, revealing the new scene inside its mask.",
+        "Expose seek(t) so frames can be inspected deterministically; add play, pause, replay, and a reduced-motion still.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting Canvas 2D"
+        ],
+        "assets": [
+          "Supply final text, real data, and cleared product assets where requested."
+        ]
+      },
+      "limitations": [
+        "A match cut needs matching geometry; do not disguise an unrelated hard cut with a flash.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/shape-match-cut"
+    },
+    {
+      "id": "quote-reveal",
+      "version": "1.0.0",
+      "title": "Quote reveal",
+      "category": "film",
+      "stack": "canvas",
+      "summary": "A short quotation appears line by line with its attribution in the same frame.",
+      "tags": [
+        "quote",
+        "testimonial",
+        "editorial",
+        "text",
+        "citation"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 12,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Build a ten-second quotation scene. Break a supplied quote into balanced lines, reveal lines with 120ms spacing, and place the author's name and source below. Hold all text together for at least five seconds before fading the scene.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Build a ten-second quotation scene. Break a supplied quote into balanced lines, reveal lines with 120ms spacing, and place the author's name and source below. Hold all text together for at least five seconds before fading the scene.",
+        "Expose seek(t) so frames can be inspected deterministically; add play, pause, replay, and a reduced-motion still.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting Canvas 2D"
+        ],
+        "assets": [
+          "Supply final text, real data, and cleared product assets where requested."
+        ]
+      },
+      "limitations": [
+        "Never invent a quotation or endorsement. Keep source attribution legible in the final output.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/quote-reveal"
+    },
+    {
+      "id": "product-teardown",
+      "version": "1.0.0",
+      "title": "Exploded product diagram",
+      "category": "film",
+      "stack": "canvas",
+      "summary": "A schematic product separates into labeled layers and returns to its assembled state.",
+      "tags": [
+        "exploded",
+        "teardown",
+        "layers",
+        "product",
+        "assembly"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 12,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Build a twelve-second schematic with three to five user-defined product layers. Start assembled, separate layers along one shared axis, reveal labels outside the object silhouette, hold, then reassemble in reverse order. Use simple geometry when no cleared model is supplied.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Build a twelve-second schematic with three to five user-defined product layers. Start assembled, separate layers along one shared axis, reveal labels outside the object silhouette, hold, then reassemble in reverse order. Use simple geometry when no cleared model is supplied.",
+        "Expose seek(t) so frames can be inspected deterministically; add play, pause, replay, and a reduced-motion still.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting Canvas 2D"
+        ],
+        "assets": [
+          "Supply final text, real data, and cleared product assets where requested."
+        ]
+      },
+      "limitations": [
+        "Label a schematic as illustrative; do not imply hidden engineering details are verified.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/product-teardown"
+    },
+    {
+      "id": "vertical-story",
+      "version": "1.0.0",
+      "title": "Vertical product story",
+      "category": "film",
+      "stack": "canvas",
+      "summary": "A portrait product film moves through a problem, a useful action, and a closing card.",
+      "tags": [
+        "vertical",
+        "social",
+        "reel",
+        "portrait",
+        "story"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 12,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "9:16",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Build a fifteen-second 9:16 film with three five-second beats: a supplied problem, a product action that addresses it, and a closing card. Keep essential text in the central safe region, limit each card to twelve words, and use one directional transition throughout.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Build a fifteen-second 9:16 film with three five-second beats: a supplied problem, a product action that addresses it, and a closing card. Keep essential text in the central safe region, limit each card to twelve words, and use one directional transition throughout.",
+        "Expose seek(t) so frames can be inspected deterministically; add play, pause, replay, and a reduced-motion still.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting Canvas 2D"
+        ],
+        "assets": [
+          "Supply final text, real data, and cleared product assets where requested."
+        ]
+      },
+      "limitations": [
+        "Leave room for platform controls and captions. Use only supplied or cleared product claims.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/vertical-story"
+    },
+    {
+      "id": "countdown",
+      "version": "1.0.0",
+      "title": "Launch countdown",
+      "category": "film",
+      "stack": "canvas",
+      "summary": "Three large numerals mark time before a launch title appears.",
+      "tags": [
+        "countdown",
+        "timer",
+        "launch",
+        "numbers"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 12,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Build a five-second countdown with the digits three, two, and one each occupying one second. Scale each numeral from .92 to 1 with a short opacity reveal, then replace the final numeral with a supplied title for two seconds. Use time-derived states and avoid strobing.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Build a five-second countdown with the digits three, two, and one each occupying one second. Scale each numeral from .92 to 1 with a short opacity reveal, then replace the final numeral with a supplied title for two seconds. Use time-derived states and avoid strobing.",
+        "Expose seek(t) so frames can be inspected deterministically; add play, pause, replay, and a reduced-motion still.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting Canvas 2D"
+        ],
+        "assets": [
+          "Supply final text, real data, and cleared product assets where requested."
+        ]
+      },
+      "limitations": [
+        "If used for a real event, keep displayed timing synchronized to the actual event clock.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/countdown"
+    },
+    {
+      "id": "process-flow",
+      "version": "1.0.0",
+      "title": "Process flow",
+      "category": "explainer",
+      "stack": "canvas",
+      "summary": "Three labeled steps connect in sequence as a dot travels between them.",
+      "tags": [
+        "workflow",
+        "process",
+        "steps",
+        "pipeline",
+        "flow",
+        "diagram"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 12,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Build an eight-second process diagram with three supplied step labels. Reveal nodes one at a time, draw each connector after its source node settles, and move one dot along the completed path. Hold the complete diagram for two seconds with all labels visible.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Build an eight-second process diagram with three supplied step labels. Reveal nodes one at a time, draw each connector after its source node settles, and move one dot along the completed path. Hold the complete diagram for two seconds with all labels visible.",
+        "Expose seek(t) so frames can be inspected deterministically; add play, pause, replay, and a reduced-motion still.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting Canvas 2D"
+        ],
+        "assets": [
+          "Supply final text, real data, and cleared product assets where requested."
+        ]
+      },
+      "limitations": [
+        "The moving dot is illustrative unless it is driven by actual process data.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "reproduced",
+        "date": "2026-10-22",
+        "model": "Codex; model identifier not exposed in the build environment",
+        "stack": "Canvas 2D",
+        "recipeVersion": "1.0.0",
+        "implementationHash": "sha256:39180ce652d981232f9c552abcc1bce46c1f9299fdc937aa80fb45e23ebced61",
+        "evidence": "evidence/posters/process-flow.png",
+        "limitations": [
+          "Reference implemented during this Codex session; not an independent model benchmark.",
+          "Demo copy and numeric values are illustrative.",
+          "Browser checks cover Chromium desktop, mobile viewport, deterministic seek, and reduced motion."
+        ]
+      },
+      "preview": {
+        "kind": "dkc-reference",
+        "url": "https://cave-motion.darkknightcave.workers.dev/motion-library/demos/index.html?id=process-flow",
+        "poster": "/motion-library/posters/process-flow.png",
+        "note": "DKC reference implementation; not an original creator video."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/process-flow"
+    },
+    {
+      "id": "bar-race",
+      "version": "1.0.0",
+      "title": "Ranked bars",
+      "category": "explainer",
+      "stack": "canvas",
+      "summary": "A small ranked chart animates between two supplied snapshots of data.",
+      "tags": [
+        "bar",
+        "chart",
+        "ranking",
+        "race",
+        "data",
+        "graph"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 12,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Build an eight-second horizontal bar chart for four supplied categories. Interpolate numeric values between two snapshots, sort rows at each frame, and ease each row toward its current rank. Keep labels and values outside the bars and use a shared fixed axis.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Build an eight-second horizontal bar chart for four supplied categories. Interpolate numeric values between two snapshots, sort rows at each frame, and ease each row toward its current rank. Keep labels and values outside the bars and use a shared fixed axis.",
+        "Expose seek(t) so frames can be inspected deterministically; add play, pause, replay, and a reduced-motion still.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting Canvas 2D"
+        ],
+        "assets": [
+          "Supply final text, real data, and cleared product assets where requested."
+        ]
+      },
+      "limitations": [
+        "Show units, dates, and source. Never change the axis scale silently to exaggerate differences.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "reproduced",
+        "date": "2026-10-22",
+        "model": "Codex; model identifier not exposed in the build environment",
+        "stack": "Canvas 2D",
+        "recipeVersion": "1.0.0",
+        "implementationHash": "sha256:39180ce652d981232f9c552abcc1bce46c1f9299fdc937aa80fb45e23ebced61",
+        "evidence": "evidence/posters/bar-race.png",
+        "limitations": [
+          "Reference implemented during this Codex session; not an independent model benchmark.",
+          "Demo copy and numeric values are illustrative.",
+          "Browser checks cover Chromium desktop, mobile viewport, deterministic seek, and reduced motion."
+        ]
+      },
+      "preview": {
+        "kind": "dkc-reference",
+        "url": "https://cave-motion.darkknightcave.workers.dev/motion-library/demos/index.html?id=bar-race",
+        "poster": "/motion-library/posters/bar-race.png",
+        "note": "DKC reference implementation; not an original creator video."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/bar-race"
+    },
+    {
+      "id": "line-chart-draw",
+      "version": "1.0.0",
+      "title": "Line chart draw",
+      "category": "explainer",
+      "stack": "svg",
+      "summary": "A data line draws across a stable axis and ends with a labeled value.",
+      "tags": [
+        "line",
+        "chart",
+        "trend",
+        "graph",
+        "data",
+        "stroke"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 12,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Build a six-second line chart using supplied dated observations. Render axes and units first, then reveal the data path with a left-to-right clip over two seconds. Add the final value and source caption after the reveal; hold the final chart for three seconds.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Build a six-second line chart using supplied dated observations. Render axes and units first, then reveal the data path with a left-to-right clip over two seconds. Add the final value and source caption after the reveal; hold the final chart for three seconds.",
+        "Expose seek(t) so frames can be inspected deterministically; add play, pause, replay, and a reduced-motion still.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting SVG"
+        ],
+        "assets": [
+          "Supply final text, real data, and cleared product assets where requested."
+        ]
+      },
+      "limitations": [
+        "Preserve chronological spacing and label any missing observations.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/line-chart-draw"
+    },
+    {
+      "id": "donut-breakdown",
+      "version": "1.0.0",
+      "title": "Donut breakdown",
+      "category": "explainer",
+      "stack": "svg",
+      "summary": "A ring fills segment by segment and connects each share to a label.",
+      "tags": [
+        "donut",
+        "pie",
+        "share",
+        "percentage",
+        "chart"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 12,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Build a seven-second donut chart from positive supplied values. Compute each segment's fraction from the total, reveal the arcs in sequence, then introduce directly associated labels and a total in the center. Keep percentage precision consistent.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Build a seven-second donut chart from positive supplied values. Compute each segment's fraction from the total, reveal the arcs in sequence, then introduce directly associated labels and a total in the center. Keep percentage precision consistent.",
+        "Expose seek(t) so frames can be inspected deterministically; add play, pause, replay, and a reduced-motion still.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting SVG"
+        ],
+        "assets": [
+          "Supply final text, real data, and cleared product assets where requested."
+        ]
+      },
+      "limitations": [
+        "Reject zero totals and negative values. Do not rely on color alone to identify segments.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/donut-breakdown"
+    },
+    {
+      "id": "timeline-milestones",
+      "version": "1.0.0",
+      "title": "Milestone timeline",
+      "category": "explainer",
+      "stack": "canvas",
+      "summary": "A line connects dated milestones while each caption has time to be read.",
+      "tags": [
+        "timeline",
+        "history",
+        "milestone",
+        "roadmap",
+        "dates"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 12,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Build a twelve-second timeline with four supplied dates and captions. Draw a horizontal rail, introduce each marker in chronological order at equal temporal beats, and reveal its caption nearby. End on the full timeline with a three-second hold.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Build a twelve-second timeline with four supplied dates and captions. Draw a horizontal rail, introduce each marker in chronological order at equal temporal beats, and reveal its caption nearby. End on the full timeline with a three-second hold.",
+        "Expose seek(t) so frames can be inspected deterministically; add play, pause, replay, and a reduced-motion still.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting Canvas 2D"
+        ],
+        "assets": [
+          "Supply final text, real data, and cleared product assets where requested."
+        ]
+      },
+      "limitations": [
+        "Distinguish proposed roadmap dates from completed events.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/timeline-milestones"
+    },
+    {
+      "id": "network-routing",
+      "version": "1.0.0",
+      "title": "Network route",
+      "category": "explainer",
+      "stack": "canvas",
+      "summary": "A packet follows a highlighted route through a small network diagram.",
+      "tags": [
+        "network",
+        "routing",
+        "packet",
+        "nodes",
+        "connections"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 12,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Build a ten-second diagram with six nodes and a single supplied route. Draw the full graph faintly, highlight the route's edges, and move a dot through them at constant distance-per-second speed. Pause briefly at the destination and show its label.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Build a ten-second diagram with six nodes and a single supplied route. Draw the full graph faintly, highlight the route's edges, and move a dot through them at constant distance-per-second speed. Pause briefly at the destination and show its label.",
+        "Expose seek(t) so frames can be inspected deterministically; add play, pause, replay, and a reduced-motion still.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting Canvas 2D"
+        ],
+        "assets": [
+          "Supply final text, real data, and cleared product assets where requested."
+        ]
+      },
+      "limitations": [
+        "Label the topology as illustrative unless it represents a real documented network.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/network-routing"
+    },
+    {
+      "id": "stack-layers",
+      "version": "1.0.0",
+      "title": "Software stack layers",
+      "category": "explainer",
+      "stack": "canvas",
+      "summary": "An application stack separates into interface, service, and storage layers.",
+      "tags": [
+        "architecture",
+        "stack",
+        "layers",
+        "software",
+        "system"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 12,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Build a nine-second isometric stack with three labeled plates. Start with the stack assembled, lift each plate along the same vertical axis, reveal interface, service, and storage captions, and use a subtle connector to show the request path.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Build a nine-second isometric stack with three labeled plates. Start with the stack assembled, lift each plate along the same vertical axis, reveal interface, service, and storage captions, and use a subtle connector to show the request path.",
+        "Expose seek(t) so frames can be inspected deterministically; add play, pause, replay, and a reduced-motion still.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting Canvas 2D"
+        ],
+        "assets": [
+          "Supply final text, real data, and cleared product assets where requested."
+        ]
+      },
+      "limitations": [
+        "Use the project's actual components when supplied; generic layers must be labeled as a schematic.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/stack-layers"
+    },
+    {
+      "id": "funnel-stages",
+      "version": "1.0.0",
+      "title": "Funnel stages",
+      "category": "explainer",
+      "stack": "svg",
+      "summary": "A supplied series of stage counts narrows into a labeled conversion funnel.",
+      "tags": [
+        "funnel",
+        "conversion",
+        "stages",
+        "marketing",
+        "data"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 12,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Build an eight-second funnel with four supplied stage counts. Size stages relative to the first value, introduce them from top to bottom, then display the percentage moving between adjacent stages. Keep the full counts and stage definitions visible.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Build an eight-second funnel with four supplied stage counts. Size stages relative to the first value, introduce them from top to bottom, then display the percentage moving between adjacent stages. Keep the full counts and stage definitions visible.",
+        "Expose seek(t) so frames can be inspected deterministically; add play, pause, replay, and a reduced-motion still.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting SVG"
+        ],
+        "assets": [
+          "Supply final text, real data, and cleared product assets where requested."
+        ]
+      },
+      "limitations": [
+        "Reject negative counts and disclose if stages overlap rather than represent a strict funnel.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/funnel-stages"
+    },
+    {
+      "id": "equation-build",
+      "version": "1.0.0",
+      "title": "Equation build",
+      "category": "explainer",
+      "stack": "canvas",
+      "summary": "A short equation forms term by term, with each variable explained nearby.",
+      "tags": [
+        "equation",
+        "math",
+        "formula",
+        "education",
+        "terms"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 12,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Build a ten-second equation using a supplied expression with at most five terms. Allocate positions from the final layout, reveal each term in reading order, and attach a short plain-language definition beneath it. Hold the whole equation without moving its baseline.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Build a ten-second equation using a supplied expression with at most five terms. Allocate positions from the final layout, reveal each term in reading order, and attach a short plain-language definition beneath it. Hold the whole equation without moving its baseline.",
+        "Expose seek(t) so frames can be inspected deterministically; add play, pause, replay, and a reduced-motion still.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting Canvas 2D"
+        ],
+        "assets": [
+          "Supply final text, real data, and cleared product assets where requested."
+        ]
+      },
+      "limitations": [
+        "Do not invent a mathematical derivation. Use plain text or user-supplied typeset assets.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/equation-build"
+    },
+    {
+      "id": "cycle-loop",
+      "version": "1.0.0",
+      "title": "Cycle diagram",
+      "category": "explainer",
+      "stack": "svg",
+      "summary": "A four-step process loops once around a circle before stopping on the complete diagram.",
+      "tags": [
+        "cycle",
+        "loop",
+        "circular",
+        "process",
+        "stages"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 12,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Build a ten-second circular process diagram with four labeled nodes. Reveal nodes in order, connect them with directional arcs, and move a single marker through one complete cycle. Stop movement after the cycle and hold the labeled diagram.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Build a ten-second circular process diagram with four labeled nodes. Reveal nodes in order, connect them with directional arcs, and move a single marker through one complete cycle. Stop movement after the cycle and hold the labeled diagram.",
+        "Expose seek(t) so frames can be inspected deterministically; add play, pause, replay, and a reduced-motion still.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting SVG"
+        ],
+        "assets": [
+          "Supply final text, real data, and cleared product assets where requested."
+        ]
+      },
+      "limitations": [
+        "Keep the reading order clear and provide a linear text equivalent.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/cycle-loop"
+    },
+    {
+      "id": "orbiting-system",
+      "version": "1.0.0",
+      "title": "Orbiting system",
+      "category": "3d",
+      "stack": "canvas",
+      "summary": "Three points move on tilted orbits around a central body.",
+      "tags": [
+        "orbit",
+        "planet",
+        "solar",
+        "space",
+        "particles"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 12,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Build a looping twelve-second orbital scene with Canvas 2D projection. Compute three circular paths in 3D, rotate their planes, project them with a fixed perspective, and sort bodies by depth before drawing. Use a restrained trail and an unchanging central body.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Build a looping twelve-second orbital scene with Canvas 2D projection. Compute three circular paths in 3D, rotate their planes, project them with a fixed perspective, and sort bodies by depth before drawing. Use a restrained trail and an unchanging central body.",
+        "Expose seek(t) so frames can be inspected deterministically; add play, pause, replay, and a reduced-motion still.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting Canvas 2D"
+        ],
+        "assets": [
+          "No external assets required for the procedural study."
+        ]
+      },
+      "limitations": [
+        "This is a stylized orbital illustration, not a physically accurate simulation.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "reproduced",
+        "date": "2026-10-22",
+        "model": "Codex; model identifier not exposed in the build environment",
+        "stack": "Canvas 2D",
+        "recipeVersion": "1.0.0",
+        "implementationHash": "sha256:39180ce652d981232f9c552abcc1bce46c1f9299fdc937aa80fb45e23ebced61",
+        "evidence": "evidence/posters/orbiting-system.png",
+        "limitations": [
+          "Reference implemented during this Codex session; not an independent model benchmark.",
+          "Demo copy and numeric values are illustrative.",
+          "Browser checks cover Chromium desktop, mobile viewport, deterministic seek, and reduced motion."
+        ]
+      },
+      "preview": {
+        "kind": "dkc-reference",
+        "url": "https://cave-motion.darkknightcave.workers.dev/motion-library/demos/index.html?id=orbiting-system",
+        "poster": "/motion-library/posters/orbiting-system.png",
+        "note": "DKC reference implementation; not an original creator video."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/orbiting-system"
+    },
+    {
+      "id": "isometric-cube",
+      "version": "1.0.0",
+      "title": "Rotating wire cube",
+      "category": "3d",
+      "stack": "canvas",
+      "summary": "A wire cube turns around two axes with a fixed camera.",
+      "tags": [
+        "cube",
+        "wireframe",
+        "rotate",
+        "isometric",
+        "geometry"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 12,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Build a twelve-second loop by rotating a cube's eight vertices around the Y axis and gently tilting around X. Project the vertices with a fixed perspective and draw the twelve edges with depth-aware opacity. Match the loop endpoints exactly.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Build a twelve-second loop by rotating a cube's eight vertices around the Y axis and gently tilting around X. Project the vertices with a fixed perspective and draw the twelve edges with depth-aware opacity. Match the loop endpoints exactly.",
+        "Expose seek(t) so frames can be inspected deterministically; add play, pause, replay, and a reduced-motion still.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting Canvas 2D"
+        ],
+        "assets": [
+          "No external assets required for the procedural study."
+        ]
+      },
+      "limitations": [
+        "Do not call perspective projection isometric unless parallel lines are actually preserved.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "reproduced",
+        "date": "2026-10-22",
+        "model": "Codex; model identifier not exposed in the build environment",
+        "stack": "Canvas 2D",
+        "recipeVersion": "1.0.0",
+        "implementationHash": "sha256:39180ce652d981232f9c552abcc1bce46c1f9299fdc937aa80fb45e23ebced61",
+        "evidence": "evidence/posters/isometric-cube.png",
+        "limitations": [
+          "Reference implemented during this Codex session; not an independent model benchmark.",
+          "Demo copy and numeric values are illustrative.",
+          "Browser checks cover Chromium desktop, mobile viewport, deterministic seek, and reduced motion."
+        ]
+      },
+      "preview": {
+        "kind": "dkc-reference",
+        "url": "https://cave-motion.darkknightcave.workers.dev/motion-library/demos/index.html?id=isometric-cube",
+        "poster": "/motion-library/posters/isometric-cube.png",
+        "note": "DKC reference implementation; not an original creator video."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/isometric-cube"
+    },
+    {
+      "id": "aurora-curtain",
+      "version": "1.0.0",
+      "title": "Aurora curtain",
+      "category": "3d",
+      "stack": "canvas",
+      "summary": "Soft green ribbons drift across a dark field without external textures.",
+      "tags": [
+        "aurora",
+        "northern",
+        "lights",
+        "ribbon",
+        "background",
+        "flow"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 12,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Build a twelve-second Canvas background using several translucent ribbons. Compute ribbon height from a sum of slow sine waves, add smaller frequency detail, and layer strokes with decreasing opacity. Use periodic time functions so the first and last frame match.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Build a twelve-second Canvas background using several translucent ribbons. Compute ribbon height from a sum of slow sine waves, add smaller frequency detail, and layer strokes with decreasing opacity. Use periodic time functions so the first and last frame match.",
+        "Expose seek(t) so frames can be inspected deterministically; add play, pause, replay, and a reduced-motion still.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting Canvas 2D"
+        ],
+        "assets": [
+          "No external assets required for the procedural study."
+        ]
+      },
+      "limitations": [
+        "This Canvas study approximates light curtains. Keep contrast sufficient for any overlaid content.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "reproduced",
+        "date": "2026-10-22",
+        "model": "Codex; model identifier not exposed in the build environment",
+        "stack": "Canvas 2D",
+        "recipeVersion": "1.0.0",
+        "implementationHash": "sha256:39180ce652d981232f9c552abcc1bce46c1f9299fdc937aa80fb45e23ebced61",
+        "evidence": "evidence/posters/aurora-curtain.png",
+        "limitations": [
+          "Reference implemented during this Codex session; not an independent model benchmark.",
+          "Demo copy and numeric values are illustrative.",
+          "Browser checks cover Chromium desktop, mobile viewport, deterministic seek, and reduced motion."
+        ]
+      },
+      "preview": {
+        "kind": "dkc-reference",
+        "url": "https://cave-motion.darkknightcave.workers.dev/motion-library/demos/index.html?id=aurora-curtain",
+        "poster": "/motion-library/posters/aurora-curtain.png",
+        "note": "DKC reference implementation; not an original creator video."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/aurora-curtain"
+    },
+    {
+      "id": "particle-assembly",
+      "version": "1.0.0",
+      "title": "Particle assembly",
+      "category": "3d",
+      "stack": "canvas",
+      "summary": "A field of points gathers into a word or a simple supplied silhouette.",
+      "tags": [
+        "particles",
+        "assemble",
+        "morph",
+        "point",
+        "cloud",
+        "dots"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 12,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Build a twelve-second Canvas scene with a seeded field of 400 points. Sample target positions from a short word rendered to an offscreen canvas, assign each point a stable target, and interpolate from scattered positions to the silhouette with staggered timing. Hold the assembled form before returning.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Build a twelve-second Canvas scene with a seeded field of 400 points. Sample target positions from a short word rendered to an offscreen canvas, assign each point a stable target, and interpolate from scattered positions to the silhouette with staggered timing. Hold the assembled form before returning.",
+        "Expose seek(t) so frames can be inspected deterministically; add play, pause, replay, and a reduced-motion still.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting Canvas 2D"
+        ],
+        "assets": [
+          "No external assets required for the procedural study."
+        ]
+      },
+      "limitations": [
+        "Use a supplied font and word. Avoid randomizing targets each frame or exceeding the point budget on mobile.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "reproduced",
+        "date": "2026-10-22",
+        "model": "Codex; model identifier not exposed in the build environment",
+        "stack": "Canvas 2D",
+        "recipeVersion": "1.0.0",
+        "implementationHash": "sha256:39180ce652d981232f9c552abcc1bce46c1f9299fdc937aa80fb45e23ebced61",
+        "evidence": "evidence/posters/particle-assembly.png",
+        "limitations": [
+          "Reference implemented during this Codex session; not an independent model benchmark.",
+          "Demo copy and numeric values are illustrative.",
+          "Browser checks cover Chromium desktop, mobile viewport, deterministic seek, and reduced motion."
+        ]
+      },
+      "preview": {
+        "kind": "dkc-reference",
+        "url": "https://cave-motion.darkknightcave.workers.dev/motion-library/demos/index.html?id=particle-assembly",
+        "poster": "/motion-library/posters/particle-assembly.png",
+        "note": "DKC reference implementation; not an original creator video."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/particle-assembly"
+    },
+    {
+      "id": "noise-terrain",
+      "version": "1.0.0",
+      "title": "Wire terrain",
+      "category": "3d",
+      "stack": "threejs",
+      "summary": "A wireframe landscape moves under a fixed low camera.",
+      "tags": [
+        "terrain",
+        "landscape",
+        "wireframe",
+        "grid",
+        "mountains"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 12,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Build a Three.js plane with modest subdivisions and displace its vertices using smooth procedural noise. Advance the sampled noise coordinates over time, keep the camera fixed, and color the wireframe with one accent on a dark background. Dispose of geometry and materials on teardown.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Build a Three.js plane with modest subdivisions and displace its vertices using smooth procedural noise. Advance the sampled noise coordinates over time, keep the camera fixed, and color the wireframe with one accent on a dark background. Dispose of geometry and materials on teardown.",
+        "Expose seek(t) so frames can be inspected deterministically; add play, pause, replay, and a reduced-motion still.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "three",
+          "A browser supporting WebGL 2"
+        ],
+        "assets": [
+          "No external assets required for the procedural study."
+        ]
+      },
+      "limitations": [
+        "Cap device pixel ratio at 1.5 and reduce subdivisions on mobile. Provide a static fallback.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/noise-terrain"
+    },
+    {
+      "id": "glass-orbit",
+      "version": "1.0.0",
+      "title": "Glass orbit",
+      "category": "3d",
+      "stack": "threejs",
+      "summary": "A transparent geometric object turns slowly above a matte surface.",
+      "tags": [
+        "glass",
+        "refraction",
+        "material",
+        "orbit",
+        "prism"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 12,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Build a Three.js scene with one beveled or rounded geometric object, a matte plane, and two large area-like lights. Use a physical transmission material with restrained roughness and a procedural or cleared environment. Rotate the object slowly while keeping the camera still.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Build a Three.js scene with one beveled or rounded geometric object, a matte plane, and two large area-like lights. Use a physical transmission material with restrained roughness and a procedural or cleared environment. Rotate the object slowly while keeping the camera still.",
+        "Expose seek(t) so frames can be inspected deterministically; add play, pause, replay, and a reduced-motion still.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "three",
+          "A browser supporting WebGL 2"
+        ],
+        "assets": [
+          "No external assets required for the procedural study."
+        ]
+      },
+      "limitations": [
+        "Transmission can be expensive. Provide an opaque fallback and avoid requiring an external HDR map.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/glass-orbit"
+    },
+    {
+      "id": "ribbon-flight",
+      "version": "1.0.0",
+      "title": "Ribbon flight",
+      "category": "3d",
+      "stack": "threejs",
+      "summary": "A narrow ribbon follows a curved path through a quiet scene.",
+      "tags": [
+        "ribbon",
+        "curve",
+        "trail",
+        "flight",
+        "spline"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 12,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Build a Three.js ribbon mesh along a closed Catmull-Rom curve. Sample a stable frame along the curve, move a highlight along its length using a shader uniform, and use a soft directional light to make its twists readable. Keep the mesh topology fixed.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Build a Three.js ribbon mesh along a closed Catmull-Rom curve. Sample a stable frame along the curve, move a highlight along its length using a shader uniform, and use a soft directional light to make its twists readable. Keep the mesh topology fixed.",
+        "Expose seek(t) so frames can be inspected deterministically; add play, pause, replay, and a reduced-motion still.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "three",
+          "A browser supporting WebGL 2"
+        ],
+        "assets": [
+          "No external assets required for the procedural study."
+        ]
+      },
+      "limitations": [
+        "Avoid rebuilding geometry on every frame; cap the path segment count.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/ribbon-flight"
+    },
+    {
+      "id": "floating-cards",
+      "version": "1.0.0",
+      "title": "Floating product cards",
+      "category": "3d",
+      "stack": "css",
+      "summary": "Three flat product panels drift at different depths with a small camera tilt.",
+      "tags": [
+        "cards",
+        "depth",
+        "parallax",
+        "float",
+        "product"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 12,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Build a CSS perspective scene with three supplied product panels. Give each a fixed translateZ depth and a slow, low-amplitude vertical oscillation with different phases. Limit pointer-driven camera tilt to four degrees and keep panel text readable.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Build a CSS perspective scene with three supplied product panels. Give each a fixed translateZ depth and a slow, low-amplitude vertical oscillation with different phases. Limit pointer-driven camera tilt to four degrees and keep panel text readable.",
+        "Expose seek(t) so frames can be inspected deterministically; add play, pause, replay, and a reduced-motion still.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting modern CSS"
+        ],
+        "assets": [
+          "No external assets required for the procedural study."
+        ]
+      },
+      "limitations": [
+        "Disable tilt on touch devices and provide a flat layout for reduced motion.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/floating-cards"
+    },
+    {
+      "id": "portal-rings",
+      "version": "1.0.0",
+      "title": "Portal rings",
+      "category": "3d",
+      "stack": "threejs",
+      "summary": "Concentric rings rotate at different speeds around a dark central opening.",
+      "tags": [
+        "portal",
+        "rings",
+        "tunnel",
+        "rotation",
+        "space"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 12,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Build a Three.js scene with six torus meshes sharing one center. Give successive rings smaller radii and slightly different rotation speeds; animate a subtle emissive accent without postprocessing. Keep a fixed camera looking through the opening.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Build a Three.js scene with six torus meshes sharing one center. Give successive rings smaller radii and slightly different rotation speeds; animate a subtle emissive accent without postprocessing. Keep a fixed camera looking through the opening.",
+        "Expose seek(t) so frames can be inspected deterministically; add play, pause, replay, and a reduced-motion still.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "three",
+          "A browser supporting WebGL 2"
+        ],
+        "assets": [
+          "No external assets required for the procedural study."
+        ]
+      },
+      "limitations": [
+        "Avoid flashing emission and excessive bloom. Dispose all meshes and stop the frame loop when hidden.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/portal-rings"
+    },
+    {
+      "id": "wave-surface",
+      "version": "1.0.0",
+      "title": "Wave surface",
+      "category": "3d",
+      "stack": "threejs",
+      "summary": "A mesh rises into crossing waves under a fixed light.",
+      "tags": [
+        "waves",
+        "water",
+        "surface",
+        "mesh",
+        "ocean"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 12,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Build a moderately subdivided Three.js plane with vertex-shader displacement from two crossing sine waves. Recompute or approximate the normal consistently with displacement, light the surface from one direction, and use a quiet solid material. Drive wave phase from elapsed time.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Build a moderately subdivided Three.js plane with vertex-shader displacement from two crossing sine waves. Recompute or approximate the normal consistently with displacement, light the surface from one direction, and use a quiet solid material. Drive wave phase from elapsed time.",
+        "Expose seek(t) so frames can be inspected deterministically; add play, pause, replay, and a reduced-motion still.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "three",
+          "A browser supporting WebGL 2"
+        ],
+        "assets": [
+          "No external assets required for the procedural study."
+        ]
+      },
+      "limitations": [
+        "This is a stylized wave study. Real water needs additional optical and simulation work.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/wave-surface"
+    },
+    {
+      "id": "metal-droplets",
+      "version": "1.0.0",
+      "title": "Metal droplets",
+      "category": "3d",
+      "stack": "threejs",
+      "summary": "A small cluster of reflective spheres moves through a slow repeating pattern.",
+      "tags": [
+        "metal",
+        "chrome",
+        "liquid",
+        "droplets",
+        "spheres"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 12,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Build a Three.js study with five metallic spheres of different radii following periodic paths. Use large light panels or a cleared environment for readable reflections, and keep roughness above zero. Maintain separation unless an actual signed-distance blending shader is implemented.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Build a Three.js study with five metallic spheres of different radii following periodic paths. Use large light panels or a cleared environment for readable reflections, and keep roughness above zero. Maintain separation unless an actual signed-distance blending shader is implemented.",
+        "Expose seek(t) so frames can be inspected deterministically; add play, pause, replay, and a reduced-motion still.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "three",
+          "A browser supporting WebGL 2"
+        ],
+        "assets": [
+          "No external assets required for the procedural study."
+        ]
+      },
+      "limitations": [
+        "Separate spheres are not fluid simulation. Label the preview as a material and motion study.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/metal-droplets"
+    },
+    {
+      "id": "starfield-drift",
+      "version": "1.0.0",
+      "title": "Starfield drift",
+      "category": "3d",
+      "stack": "canvas",
+      "summary": "A sparse starfield drifts past a fixed camera with a slow sense of depth.",
+      "tags": [
+        "stars",
+        "space",
+        "field",
+        "depth",
+        "drift"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 12,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Build a Canvas scene with 300 seeded stars at stable 3D coordinates. Move the camera forward slowly, project points with perspective, and recycle stars beyond the near plane. Keep point size and brightness bounded, and leave a dark region for content.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Build a Canvas scene with 300 seeded stars at stable 3D coordinates. Move the camera forward slowly, project points with perspective, and recycle stars beyond the near plane. Keep point size and brightness bounded, and leave a dark region for content.",
+        "Expose seek(t) so frames can be inspected deterministically; add play, pause, replay, and a reduced-motion still.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting Canvas 2D"
+        ],
+        "assets": [
+          "No external assets required for the procedural study."
+        ]
+      },
+      "limitations": [
+        "Avoid full-screen flashes or high-speed optical flow; offer a static starfield for reduced motion.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/starfield-drift"
+    },
+    {
+      "id": "dot-globe",
+      "version": "1.0.0",
+      "title": "Dot globe",
+      "category": "3d",
+      "stack": "canvas",
+      "summary": "Points on a sphere turn together while the rear hemisphere stays faint.",
+      "tags": [
+        "globe",
+        "sphere",
+        "dots",
+        "world",
+        "rotate"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 12,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Distribute 500 points on a sphere with a Fibonacci lattice, rotate them around the vertical axis, and project them to a Canvas. Draw the far hemisphere first with lower opacity, then the front hemisphere. Use a twelve-second rotation period and one fixed light cue.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Distribute 500 points on a sphere with a Fibonacci lattice, rotate them around the vertical axis, and project them to a Canvas. Draw the far hemisphere first with lower opacity, then the front hemisphere. Use a twelve-second rotation period and one fixed light cue.",
+        "Expose seek(t) so frames can be inspected deterministically; add play, pause, replay, and a reduced-motion still.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting Canvas 2D"
+        ],
+        "assets": [
+          "No external assets required for the procedural study."
+        ]
+      },
+      "limitations": [
+        "A point sphere does not represent geographic data. Supply a cleared map mask if continents are needed.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/dot-globe"
+    },
+    {
+      "id": "contour-field",
+      "version": "1.0.0",
+      "title": "Contour field",
+      "category": "3d",
+      "stack": "canvas",
+      "summary": "Nested organic contours breathe slowly around an off-center focal point.",
+      "tags": [
+        "contour",
+        "topographic",
+        "lines",
+        "field",
+        "background"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 12,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Build a Canvas background with twenty nested closed contours sampled at 120 angles each. Modulate each radius with low-frequency periodic waves, vary line opacity by ring, and animate the phase slowly. Keep stroke thickness stable across resolution changes.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Build a Canvas background with twenty nested closed contours sampled at 120 angles each. Modulate each radius with low-frequency periodic waves, vary line opacity by ring, and animate the phase slowly. Keep stroke thickness stable across resolution changes.",
+        "Expose seek(t) so frames can be inspected deterministically; add play, pause, replay, and a reduced-motion still.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting Canvas 2D"
+        ],
+        "assets": [
+          "No external assets required for the procedural study."
+        ]
+      },
+      "limitations": [
+        "Limit contour contrast behind text and stop drawing when the scene leaves the viewport.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/contour-field"
+    },
+    {
+      "id": "light-tunnel",
+      "version": "1.0.0",
+      "title": "Light tunnel",
+      "category": "3d",
+      "stack": "canvas",
+      "summary": "Repeated rectangular frames create a slow journey through a tunnel.",
+      "tags": [
+        "tunnel",
+        "depth",
+        "frames",
+        "light",
+        "perspective"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 12,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Build a Canvas scene with sixteen rectangular frames at evenly spaced depths. Move them toward the camera at a constant speed, wrap their depth deterministically, and fade the closest and farthest frames. Apply only a small periodic rotation to the complete tunnel.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Build a Canvas scene with sixteen rectangular frames at evenly spaced depths. Move them toward the camera at a constant speed, wrap their depth deterministically, and fade the closest and farthest frames. Apply only a small periodic rotation to the complete tunnel.",
+        "Expose seek(t) so frames can be inspected deterministically; add play, pause, replay, and a reduced-motion still.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting Canvas 2D"
+        ],
+        "assets": [
+          "No external assets required for the procedural study."
+        ]
+      },
+      "limitations": [
+        "Keep travel slow and provide a still frame for reduced-motion users.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/light-tunnel"
+    }
+  ],
+  "references": [
+    {
+      "id": "reference-yihui-opus-videos",
+      "title": "Awesome Opus 5.5 Videos",
+      "summary": "A creator-attributed collection of coded motion examples. Review the original post and entry rights before reusing material.",
+      "url": "https://github.com/yihui-dev/awesome-opus5-5-videos",
+      "tags": [
+        "motion",
+        "film",
+        "canvas",
+        "svg",
+        "threejs"
+      ],
+      "reason": "Third-party creator rights require entry-level review."
+    },
+    {
+      "id": "reference-opusvideo",
+      "title": "Awesome Claude Video",
+      "summary": "Community video examples and implementation guides. This entry links to the source collection; it does not redistribute its prompts.",
+      "url": "https://github.com/opusvideo/awesome-claude-video",
+      "tags": [
+        "film",
+        "explainer",
+        "animation"
+      ],
+      "reason": "No blanket redistribution permission established."
+    },
+    {
+      "id": "reference-guanmo",
+      "title": "Awesome AI Motion",
+      "summary": "A motion gallery with creator credits and explicit third-party rights boundaries. Follow the original links for each work.",
+      "url": "https://github.com/guanmo-ai/awesome-ai-motion",
+      "tags": [
+        "motion",
+        "3d",
+        "canvas",
+        "ui"
+      ],
+      "reason": "Its MIT license explicitly excludes third-party prompts and media."
+    },
+    {
+      "id": "reference-tripo",
+      "title": "Awesome Opus 5.5 Prompts",
+      "summary": "A collection of creative coding examples. Its rights policy separates original tooling from third-party prompts and media.",
+      "url": "https://github.com/TripoGrowthLab/awesome-opus-5-5-prompts",
+      "tags": [
+        "3d",
+        "film",
+        "motion",
+        "prompts"
+      ],
+      "reason": "Its MIT license does not relicense third-party prompts or media."
+    }
+  ]
+}

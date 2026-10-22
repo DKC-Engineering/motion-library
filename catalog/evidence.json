@@ -1,0 +1,170 @@
+{
+  "magnetic-button": {
+    "status": "reproduced",
+    "date": "2026-10-22",
+    "model": "Codex; model identifier not exposed in the build environment",
+    "stack": "HTML/CSS",
+    "recipeVersion": "1.0.0",
+    "implementationHash": "sha256:39180ce652d981232f9c552abcc1bce46c1f9299fdc937aa80fb45e23ebced61",
+    "evidence": "evidence/posters/magnetic-button.png",
+    "limitations": [
+      "Reference implemented during this Codex session; not an independent model benchmark.",
+      "Demo copy and numeric values are illustrative.",
+      "Browser checks cover Chromium desktop, mobile viewport, deterministic seek, and reduced motion."
+    ]
+  },
+  "morphing-toggle": {
+    "status": "reproduced",
+    "date": "2026-10-22",
+    "model": "Codex; model identifier not exposed in the build environment",
+    "stack": "HTML/CSS",
+    "recipeVersion": "1.0.0",
+    "implementationHash": "sha256:39180ce652d981232f9c552abcc1bce46c1f9299fdc937aa80fb45e23ebced61",
+    "evidence": "evidence/posters/morphing-toggle.png",
+    "limitations": [
+      "Reference implemented during this Codex session; not an independent model benchmark.",
+      "Demo copy and numeric values are illustrative.",
+      "Browser checks cover Chromium desktop, mobile viewport, deterministic seek, and reduced motion."
+    ]
+  },
+  "staggered-menu": {
+    "status": "reproduced",
+    "date": "2026-10-22",
+    "model": "Codex; model identifier not exposed in the build environment",
+    "stack": "HTML/CSS",
+    "recipeVersion": "1.0.0",
+    "implementationHash": "sha256:39180ce652d981232f9c552abcc1bce46c1f9299fdc937aa80fb45e23ebced61",
+    "evidence": "evidence/posters/staggered-menu.png",
+    "limitations": [
+      "Reference implemented during this Codex session; not an independent model benchmark.",
+      "Demo copy and numeric values are illustrative.",
+      "Browser checks cover Chromium desktop, mobile viewport, deterministic seek, and reduced motion."
+    ]
+  },
+  "kinetic-wordmark": {
+    "status": "reproduced",
+    "date": "2026-10-22",
+    "model": "Codex; model identifier not exposed in the build environment",
+    "stack": "Canvas 2D",
+    "recipeVersion": "1.0.0",
+    "implementationHash": "sha256:39180ce652d981232f9c552abcc1bce46c1f9299fdc937aa80fb45e23ebced61",
+    "evidence": "evidence/posters/kinetic-wordmark.png",
+    "limitations": [
+      "Reference implemented during this Codex session; not an independent model benchmark.",
+      "Demo copy and numeric values are illustrative.",
+      "Browser checks cover Chromium desktop, mobile viewport, deterministic seek, and reduced motion."
+    ]
+  },
+  "feature-launch": {
+    "status": "reproduced",
+    "date": "2026-10-22",
+    "model": "Codex; model identifier not exposed in the build environment",
+    "stack": "Canvas 2D",
+    "recipeVersion": "1.0.0",
+    "implementationHash": "sha256:39180ce652d981232f9c552abcc1bce46c1f9299fdc937aa80fb45e23ebced61",
+    "evidence": "evidence/posters/feature-launch.png",
+    "limitations": [
+      "Reference implemented during this Codex session; not an independent model benchmark.",
+      "Demo copy and numeric values are illustrative.",
+      "Browser checks cover Chromium desktop, mobile viewport, deterministic seek, and reduced motion."
+    ]
+  },
+  "metric-count-up": {
+    "status": "reproduced",
+    "date": "2026-10-22",
+    "model": "Codex; model identifier not exposed in the build environment",
+    "stack": "Canvas 2D",
+    "recipeVersion": "1.0.0",
+    "implementationHash": "sha256:39180ce652d981232f9c552abcc1bce46c1f9299fdc937aa80fb45e23ebced61",
+    "evidence": "evidence/posters/metric-count-up.png",
+    "limitations": [
+      "Reference implemented during this Codex session; not an independent model benchmark.",
+      "Demo copy and numeric values are illustrative.",
+      "Browser checks cover Chromium desktop, mobile viewport, deterministic seek, and reduced motion."
+    ]
+  },
+  "process-flow": {
+    "status": "reproduced",
+    "date": "2026-10-22",
+    "model": "Codex; model identifier not exposed in the build environment",
+    "stack": "Canvas 2D",
+    "recipeVersion": "1.0.0",
+    "implementationHash": "sha256:39180ce652d981232f9c552abcc1bce46c1f9299fdc937aa80fb45e23ebced61",
+    "evidence": "evidence/posters/process-flow.png",
+    "limitations": [
+      "Reference implemented during this Codex session; not an independent model benchmark.",
+      "Demo copy and numeric values are illustrative.",
+      "Browser checks cover Chromium desktop, mobile viewport, deterministic seek, and reduced motion."
+    ]
+  },
+  "bar-race": {
+    "status": "reproduced",
+    "date": "2026-10-22",
+    "model": "Codex; model identifier not exposed in the build environment",
+    "stack": "Canvas 2D",
+    "recipeVersion": "1.0.0",
+    "implementationHash": "sha256:39180ce652d981232f9c552abcc1bce46c1f9299fdc937aa80fb45e23ebced61",
+    "evidence": "evidence/posters/bar-race.png",
+    "limitations": [
+      "Reference implemented during this Codex session; not an independent model benchmark.",
+      "Demo copy and numeric values are illustrative.",
+      "Browser checks cover Chromium desktop, mobile viewport, deterministic seek, and reduced motion."
+    ]
+  },
+  "orbiting-system": {
+    "status": "reproduced",
+    "date": "2026-10-22",
+    "model": "Codex; model identifier not exposed in the build environment",
+    "stack": "Canvas 2D",
+    "recipeVersion": "1.0.0",
+    "implementationHash": "sha256:39180ce652d981232f9c552abcc1bce46c1f9299fdc937aa80fb45e23ebced61",
+    "evidence": "evidence/posters/orbiting-system.png",
+    "limitations": [
+      "Reference implemented during this Codex session; not an independent model benchmark.",
+      "Demo copy and numeric values are illustrative.",
+      "Browser checks cover Chromium desktop, mobile viewport, deterministic seek, and reduced motion."
+    ]
+  },
+  "isometric-cube": {
+    "status": "reproduced",
+    "date": "2026-10-22",
+    "model": "Codex; model identifier not exposed in the build environment",
+    "stack": "Canvas 2D",
+    "recipeVersion": "1.0.0",
+    "implementationHash": "sha256:39180ce652d981232f9c552abcc1bce46c1f9299fdc937aa80fb45e23ebced61",
+    "evidence": "evidence/posters/isometric-cube.png",
+    "limitations": [
+      "Reference implemented during this Codex session; not an independent model benchmark.",
+      "Demo copy and numeric values are illustrative.",
+      "Browser checks cover Chromium desktop, mobile viewport, deterministic seek, and reduced motion."
+    ]
+  },
+  "aurora-curtain": {
+    "status": "reproduced",
+    "date": "2026-10-22",
+    "model": "Codex; model identifier not exposed in the build environment",
+    "stack": "Canvas 2D",
+    "recipeVersion": "1.0.0",
+    "implementationHash": "sha256:39180ce652d981232f9c552abcc1bce46c1f9299fdc937aa80fb45e23ebced61",
+    "evidence": "evidence/posters/aurora-curtain.png",
+    "limitations": [
+      "Reference implemented during this Codex session; not an independent model benchmark.",
+      "Demo copy and numeric values are illustrative.",
+      "Browser checks cover Chromium desktop, mobile viewport, deterministic seek, and reduced motion."
+    ]
+  },
+  "particle-assembly": {
+    "status": "reproduced",
+    "date": "2026-10-22",
+    "model": "Codex; model identifier not exposed in the build environment",
+    "stack": "Canvas 2D",
+    "recipeVersion": "1.0.0",
+    "implementationHash": "sha256:39180ce652d981232f9c552abcc1bce46c1f9299fdc937aa80fb45e23ebced61",
+    "evidence": "evidence/posters/particle-assembly.png",
+    "limitations": [
+      "Reference implemented during this Codex session; not an independent model benchmark.",
+      "Demo copy and numeric values are illustrative.",
+      "Browser checks cover Chromium desktop, mobile viewport, deterministic seek, and reduced motion."
+    ]
+  }
+}

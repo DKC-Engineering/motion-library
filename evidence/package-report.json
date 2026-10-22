@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-10-22T20:59:26.405Z",
+  "snapshot": "2026-10-22.105bd97e16a9",
+  "endpoint": "https://cave-motion.darkknightcave.workers.dev/mcp",
+  "package": "@darkknightcave/motion-mcp@0.1.0",
+  "installation": "npm install --offline --ignore-scripts",
+  "transport": "stdio from installed tarball",
+  "passed": [
+    "discovery",
+    "search",
+    "get",
+    "prepare",
+    "prompt",
+    "resource",
+    "new-account preview URL"
+  ],
+  "tarballBytes": 811975,
+  "sha256": "7ee88c968098abda080f57f0744f5341b5edcb9941e4f46af0f4cca3ac8c4cdb"
+}

@@ -1,0 +1,13 @@
+This package contains original DarkKnight Cave motion recipes and reference
+implementation code. Initial release: 50 DKC recipes, 12 reference builds.
+
+The four source collections listed in catalog/references.json are external
+discovery references. Their prompt text, video, music, screenshots, and
+creator assets are not included in this initial catalog.
+
+Future approved imports must retain their individual license, source revision,
+creator attribution, and entry-level permission evidence. Repository-level
+licenses must not be assumed to cover third-party material.
+
+No relationship with or endorsement by Anthropic, OpenAI, Cursor, Cloudflare,
+or any referenced creator is implied. Dependencies retain their own licenses.

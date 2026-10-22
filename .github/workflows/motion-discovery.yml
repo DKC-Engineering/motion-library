@@ -1,0 +1,35 @@
+name: Motion catalog discovery
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 16 * * 1"
+permissions:
+  contents: read
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Restore metadata-only review queue
+        uses: actions/cache@v4
+        with:
+          path: review/state.json
+          key: ${{ runner.os }}-motion-review-${{ github.run_id }}
+          restore-keys: ${{ runner.os }}-motion-review-
+      - name: Prepare discovery report
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/discover.mjs
+      - name: Upload metadata for human review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: motion-source-review
+          path: |
+            review/report.json
+            review/report.md
+          retention-days: 14

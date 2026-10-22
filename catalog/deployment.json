@@ -1,0 +1,6 @@
+{
+  "endpoint": "https://cave-motion.darkknightcave.workers.dev/mcp",
+  "customDomain": "https://motion.darkknightcave.co/mcp",
+  "customDomainStatus": "pending-zone-setup",
+  "npmStatus": "unpublished"
+}

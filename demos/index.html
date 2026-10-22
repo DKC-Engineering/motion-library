@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>DKC motion reference</title><link rel="stylesheet" href="style.css"></head>
+<body>
+  <main>
+    <div id="frame">
+      <canvas id="stage" width="960" height="540" role="img" aria-label="Motion reference illustration"></canvas>
+      <section id="ui" hidden aria-label="Interactive motion reference"></section>
+    </div>
+    <div class="controls"><button id="play" type="button">Pause</button><button id="replay" type="button">Replay</button><label>Time <input id="time" type="range" min="0" max="12" step="0.01" value="0"></label><output id="position">0.00s</output></div>
+    <p id="caption">Original DKC reference. Demo text and numbers are illustrative.</p>
+  </main>
+  <script src="runtime.js"></script>
+</body></html>

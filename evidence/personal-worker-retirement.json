@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-10-22T21:09:12.232Z",
+  "removedAccount": "e8ea528333563250f68d6aab6bb09c8e",
+  "removedWorkers": [
+    "cave-motion",
+    "cave-motion-staging"
+  ],
+  "controlPlaneVerification": "personal account Worker list is empty",
+  "retiredEndpoints": [
+    {
+      "url": "https://cave-motion.srshah19.workers.dev/mcp",
+      "status": 404
+    },
+    {
+      "url": "https://cave-motion-staging.srshah19.workers.dev/mcp",
+      "status": 404
+    }
+  ],
+  "activeEndpoint": "https://cave-motion.darkknightcave.workers.dev/mcp",
+  "activeHealth": {
+    "status": "ok",
+    "snapshot": "2026-10-22.105bd97e16a9",
+    "recipes": 50
+  },
+  "mcpTools": "all three passed",
+  "accountSubdomain": "not changed",
+  "analyticsHistory": "not deleted"
+}

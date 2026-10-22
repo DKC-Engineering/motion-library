@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-10-22T21:34:23.143Z",
+  "browser": "Chromium",
+  "desktop": "1440x1050",
+  "mobile": "390x844",
+  "passed": [
+    "50 static recipes",
+    "12 reproduced filter",
+    "on-demand iframe loading",
+    "search and category filters",
+    "local prompt preparation",
+    "mocked project brief attribution",
+    "empty state recovery",
+    "mobile overflow",
+    "installation page"
+  ],
+  "emailDelivery": "mocked; no email sent",
+  "nativeEditorClients": "not tested"
+}
