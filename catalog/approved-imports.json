@@ -1,1 +1,45 @@
-[]
+[
+  {
+    "id": "hand-painted-character-film",
+    "title": "Hand-painted character film",
+    "category": "film",
+    "stack": "canvas",
+    "summary": "A short 2D mascot story with painted shapes, controlled line boil and a frame-review workflow.",
+    "tags": [
+      "character",
+      "mascot",
+      "hand-drawn",
+      "p5",
+      "brush",
+      "film",
+      "canvas"
+    ],
+    "prompt": "Build a short hand-painted 2D character film using the pinned ClaudeAnimationBase starter as a separately installed reference. Use a mascot supplied by the user or a new original design; replace the bundled Clawd art and demo story. Start with STORYBOARD.md: a goal, an obstacle, a payoff, a small palette, timed actions and reactions, and transitions connecting the scenes. Wait for storyboard feedback before scene implementation. Add a new scene file and point studio.html to it. Make each frame deterministic from time, seed stable objects independently, and use anticipation, arcs, overlapping motion and holds so actions read clearly. Use local fonts and separately licensed assets. Review the renderer and dependency licenses before running it. Prefer a sandboxed Chrome process; run the upstream Linux no-sandbox route only in a disposable non-root environment without secrets or untrusted input. Render contact sheets, motion strips and contact-detail crops; inspect them before the final local MP4. Preserve John Heibel’s MIT notice and distinguish this adaptation from the full original guide.",
+    "dependencies": [
+      "Node.js compatible with the selected puppeteer-core release",
+      "p5.js, p5.brush and puppeteer-core, pinned after dependency/license review",
+      "Google Chrome or Chromium with WebGL; a dedicated GPU is recommended for watercolor fills",
+      "ffmpeg for local MP4 encoding"
+    ],
+    "assets": [
+      "An original or supplied mascot with permission to use it",
+      "Original or cleared background and prop artwork",
+      "Optional cleared audio; no music required",
+      "A locally available or cleared font if lettering is needed"
+    ],
+    "limitations": [
+      "This recipe has not been reproduced or visually verified.",
+      "Upstream renderer disables Chrome sandboxing on Linux; review and isolate that route.",
+      "Watercolor fills can take seconds per frame on integrated or software graphics.",
+      "The starter’s original characters, model sheets, font and media are not included."
+    ],
+    "creator": "John Heibel",
+    "sourceUrl": "https://github.com/JohnHeibel/ClaudeAnimationBase/blob/0ac8bf2b31942376cb6b8c4074715595d512acd2/ANIMATION_GUIDE.md",
+    "sourceRevision": "0ac8bf2b31942376cb6b8c4074715595d512acd2",
+    "license": "MIT",
+    "permissionUrl": "https://github.com/JohnHeibel/ClaudeAnimationBase/blob/0ac8bf2b31942376cb6b8c4074715595d512acd2/LICENSE",
+    "reviewedBy": "DKC maintainer",
+    "reviewedAt": "2026-10-22",
+    "reviewStatus": "approved-by-maintainer"
+  }
+]

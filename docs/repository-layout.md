@@ -18,7 +18,7 @@ IDs from `/recipe-ids`, and metadata from `/package.json`. The MCP server has
 its own `/server` entry. Prebuilt demo assets are under
 `public/motion-library/` in the installed package.
 
-The website currently pins `file:vendor/darkknightcave-motion-mcp-0.1.0.tgz`.
+The website currently pins `file:vendor/darkknightcave-motion-mcp-0.1.2.tgz`.
 Its lockfile records the package integrity. This reviewed release artifact
 allows a clean Netlify checkout to build before npm publication. The website
 copies its assets and consumes its catalog without rebuilding library sources.

@@ -3,7 +3,7 @@
   "name": "co.darkknightcave/motion",
   "title": "DarkKnight Cave Motion Library",
   "description": "Search attributed motion recipes and prepare prompts for your coding agent. No API key required.",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "websiteUrl": "https://darkknightcave.co/labs/motion-library",
   "remotes": [
     {
@@ -15,7 +15,7 @@
     {
       "registryType": "npm",
       "identifier": "@darkknightcave/motion-mcp",
-      "version": "0.1.0",
+      "version": "0.1.2",
       "transport": { "type": "stdio" }
     }
   ]

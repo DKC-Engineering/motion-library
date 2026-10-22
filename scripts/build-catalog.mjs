@@ -138,6 +138,7 @@ for (const entry of approved) {
     rights: {
       status: "cleared",
       license: entry.license,
+      licenseUrl: entry.permissionUrl,
       attribution: `${entry.creator} — ${entry.sourceUrl} (${entry.license})`,
     },
     verification: evidence[entry.id] ?? { status: "not-reproduced" },

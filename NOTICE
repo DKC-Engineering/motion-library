@@ -1,9 +1,9 @@
 This package contains original DarkKnight Cave motion recipes and reference
 implementation code. Initial release: 50 DKC recipes, 12 reference builds.
 
-The four source collections listed in catalog/references.json are external
-discovery references. Their prompt text, video, music, screenshots, and
-creator assets are not included in this initial catalog.
+The source repositories listed in catalog/references.json are external
+discovery references. Their video, music, screenshots and creator assets are not included.
+Callable licensed adaptations are identified separately below.
 
 Future approved imports must retain their individual license, source revision,
 creator attribution, and entry-level permission evidence. Repository-level
@@ -11,3 +11,10 @@ licenses must not be assumed to cover third-party material.
 
 No relationship with or endorsement by Anthropic, OpenAI, Cursor, Cloudflare,
 or any referenced creator is implied. Dependencies retain their own licenses.
+
+The hand-painted-character-film recipe is a curated adaptation of John Heibel’s
+ANIMATION_GUIDE.md in JohnHeibel/ClaudeAnimationBase at revision
+0ac8bf2b31942376cb6b8c4074715595d512acd2. It retains the MIT license; see
+licenses/ClaudeAnimationBase-MIT.txt (Copyright (c) 2026 John Heibel). The full
+guide, renderer, Clawd artwork, demo story, model sheets, fonts and media are
+not redistributed. The adaptation is not the creator’s complete original guide.

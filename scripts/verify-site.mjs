@@ -3,6 +3,7 @@ import { createServer } from "node:http";
 import { readFile, mkdir, writeFile } from "node:fs/promises";
 import { resolve, extname } from "node:path";
 import assert from "node:assert/strict";
+import { catalog } from "../dist/src/core.js";
 const siteArg = process.argv.indexOf("--site-out");
 const siteOut =
   siteArg >= 0 ? process.argv[siteArg + 1] : process.env.MOTION_SITE_EXPORT;
@@ -77,7 +78,7 @@ try {
   await page
     .getByRole("heading", { name: "Find a motion. Build it your way." })
     .waitFor();
-  assert.equal(await page.locator("article").count(), 50);
+  assert.equal(await page.locator("article").count(), catalog.recipes.length);
   assert.equal(
     await page.locator("iframe").count(),
     0,
@@ -153,13 +154,30 @@ try {
   await page.getByLabel("Describe the motion").fill("zzzyyqq");
   assert.equal(await page.locator("article").count(), 0);
   await page.getByRole("button", { name: "Reset filters" }).click();
-  assert.equal(await page.locator("article").count(), 50);
+  assert.equal(await page.locator("article").count(), catalog.recipes.length);
   await page.getByRole("button", { name: "Explainers", exact: true }).click();
   assert.equal(await page.locator("article").count(), 10);
   await page.goto(`${origin}/labs/motion-library/install`);
   await page
     .getByRole("heading", { name: "Bring the library into your editor." })
     .waitFor();
+  await page.goto(`${origin}/labs/motion-library/hand-painted-character-film`);
+  await page
+    .getByRole("heading", { name: "Hand-painted character film", exact: true })
+    .waitFor();
+  const mit = page.getByRole("link", { name: "MIT", exact: true });
+  assert.ok((await mit.getAttribute("href")).endsWith("/LICENSE"));
+  assert.ok((await page.locator("main").innerText()).includes("John Heibel"));
+  assert.ok(
+    (await page.locator("main").innerText()).includes(
+      "no reference reproduction yet",
+    ),
+  );
+  assert.ok(
+    !(await page.locator("main").innerText()).includes(
+      "Credit DarkKnight Cave when sharing an adaptation",
+    ),
+  );
   assert.equal(errors.length, 0, errors.join("\n"));
   const report = {
     checkedAt: new Date().toISOString(),
@@ -167,7 +185,7 @@ try {
     desktop: "1440x1050",
     mobile: "390x844",
     passed: [
-      "50 static recipes",
+      `${catalog.recipes.length} static recipes`,
       "12 reproduced filter",
       "on-demand iframe loading",
       "search and category filters",
@@ -176,6 +194,7 @@ try {
       "empty state recovery",
       "mobile overflow",
       "installation page",
+      "imported recipe MIT license and attribution",
     ],
     emailDelivery: "mocked; no email sent",
     nativeEditorClients: "not tested",

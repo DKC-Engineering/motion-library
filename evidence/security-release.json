@@ -1,0 +1,57 @@
+{
+  "checkedAt": "2026-10-22T22:47:50.707038+00:00",
+  "packageVersion": "0.1.2",
+  "snapshot": "2026-10-22.a82e12098f76",
+  "productionWorkerVersion": "4dc1e556-d865-4e83-b26b-8d314bef5180",
+  "stagingWorkerVersion": "c22ebce7-1c82-469d-bb6e-974fce2e9fbe",
+  "websiteDeployment": "not deployed; static export and function changes await the maintainer’s Netlify release",
+  "productionKnownDependencyAdvisories": {
+    "website": 0,
+    "library": 0
+  },
+  "libraryAllKnownDependencyAdvisories": 0,
+  "websiteDevOnlyRemaining": {
+    "auditEntries": 5,
+    "underlyingAdvisory": "GHSA-vfj7-8cjw-p6xm",
+    "package": "braces",
+    "latestRelease": "3.0.3",
+    "patchedReleaseAvailable": false,
+    "path": "eslint-config-next -> @next/eslint-plugin-next -> fast-glob -> micromatch -> braces"
+  },
+  "tests": {
+    "library": 16,
+    "websiteMotionAndContact": 6,
+    "imageCleaner": 13,
+    "receptionist": 20,
+    "searchBenchmark": "30/30",
+    "staticPages": 102,
+    "browserChecks": "passed; includes MIT attribution",
+    "lint": "passed with two pre-existing unused-variable warnings"
+  },
+  "warmHttpSmokeP95Milliseconds": {
+    "production": 114.51,
+    "staging": 104.53
+  },
+  "rateLimitBurst": "not repeated; unit tests cover early quota rejection",
+  "nativeEditorClients": "not retested",
+  "approvedImport": {
+    "id": "hand-painted-character-film",
+    "license": "MIT",
+    "creator": "John Heibel",
+    "humanApprovalDate": "2026-10-22",
+    "humanApproval": "Approve the candidate as a callable recipe",
+    "reproduced": false
+  },
+  "packageArchive": {
+    "sha256": "7ffb9d9f859643ca84309035d86882671be65859e8070463ad8a6cec19787f3a",
+    "bytes": 824006,
+    "noticeIncluded": true,
+    "privateStateExcluded": true
+  },
+  "gitActions": {
+    "commitsCreated": 0,
+    "pushes": 0,
+    "pullRequests": 0
+  },
+  "billingChanges": false
+}

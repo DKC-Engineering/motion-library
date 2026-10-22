@@ -3,18 +3,27 @@
 Run the checks from the package directory. Machine-readable evidence is kept
 under `evidence/` and `catalog/evidence.json`.
 
-For snapshot `2026-10-22.105bd97e16a9`, the package and contact tests pass,
-all thirty benchmark queries return a relevant recipe in the top three, and
-the separate website production export succeeds. Chromium checks cover the gallery,
-mobile layout, previews, local preparation, and a mocked contact submission.
-The installed npm tarball completes discovery, all three tools, the MCP prompt,
-and resource retrieval after an offline installation.
+For snapshot `2026-10-22.a82e12098f76` (package 0.1.2), all sixteen library
+tests and six website package/contact tests pass. All thirty benchmark queries
+return a relevant recipe in the top three. The separate website export builds
+102 pages, including 51 recipes. Chromium checks cover the gallery, mobile
+layout, previews, local preparation, mocked contact attribution and the imported
+recipe’s MIT license. The installed tarball completes discovery, all three
+tools, the MCP prompt and recipe resources over local stdio.
 
-The DarkKnight Cave account's production HTTP smoke check passed with a
-warm-search p95 of 99.8 ms across sixty samples from this machine. Staging
-passed at 102.36 ms. This is a smoke measurement, not a
-multi-region load test. Reports are in `http-production-report.json`,
-`package-report.json`, and `site-report.json` under `evidence/`.
+Production HTTP smoke checks passed with warm-search p95 of 114.51 ms across
+sixty samples from this machine; staging passed at 104.53 ms. These sequential
+smoke checks do not establish multi-region latency under load. Reports are in
+`http-production-report.json`, `http-staging-report.json`, `package-report.json`,
+`site-report.json`, `approved-import-report.json` and `security-release.json`
+under `evidence/`. The preceding package report is retained under
+`evidence/prior-releases/`.
+
+The Claude Animation Base adaptation was explicitly approved by the DKC
+maintainer before import. It retains John Heibel’s MIT notice and is labeled
+not reproduced. No new character animation or video was rendered in this
+release. The original twelve reference-build claims are unchanged.
+
 Historical reports from the personal-account deployment are preserved under
 `evidence/prior-account/`. See [account migration](account-migration.md).
 

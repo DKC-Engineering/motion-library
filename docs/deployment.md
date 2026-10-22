@@ -9,9 +9,9 @@ account `e2e259539144a183b4a9d5111a421825`, with the ANALYTICS_ENGINE binding
 targeting analytic_events. The npm package and MCP Registry listing remain
 unpublished. Do not paste credentials into chat or source files.
 
-The new catalog snapshot is `2026-10-22.105bd97e16a9`. Staging Worker version
-`27846e46-3694-4126-9746-ba973b181644` and production Worker version
-`b7d770c5-0cb6-404e-bd3d-c76a02c848d6` serve it. The separate DKC site export uses
+The current catalog snapshot is `2026-10-22.a82e12098f76` (package 0.1.2). Staging Worker version
+`c22ebce7-1c82-469d-bb6e-974fce2e9fbe` and production Worker version
+`4dc1e556-d865-4e83-b26b-8d314bef5180` serve it. The separate DKC site export uses
 the same snapshot and awaits review and a Netlify release.
 See [account migration](account-migration.md) for the previous deployment and
 rollback path.
@@ -57,7 +57,7 @@ npm run deploy
 Verify `/health`, perform a small search/prepare smoke check, and check the
 website's catalog snapshot. Static previews deploy with the Worker and do not
 need the main site to be published first. Publish the DKC static site
-through its existing Netlify process after reviewing the shared checkout.
+through its existing Netlify process after reviewing the website changes.
 
 ```sh
 node scripts/test-http.mjs https://cave-motion.darkknightcave.workers.dev/mcp --smoke

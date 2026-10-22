@@ -86,6 +86,37 @@ test("exact IDs, empty browsing, filters, no results, and source references", ()
     (e) => e.code === "SOURCE_ONLY",
   );
 });
+test("Claude Animation Base is discoverable as a reference and cannot be prepared", () => {
+  const id = "reference-claude-animation-base";
+  assert.ok(
+    !searchMotion({ query: "Claude Animation Base" }).results.some(
+      (r) => r.id === id,
+    ),
+  );
+  assert.equal(
+    searchMotion({ query: "Claude Animation Base", includeReferences: true })
+      .results[0].id,
+    id,
+  );
+  assert.ok(
+    searchMotion({
+      query: "p5 brush hand-drawn character",
+      includeReferences: true,
+    }).results.some((r) => r.id === id),
+  );
+  const reference = getMotion(id);
+  assert.equal(reference.availability, "source-only");
+  assert.ok(
+    reference.reference.url.includes(
+      "0ac8bf2b31942376cb6b8c4074715595d512acd2",
+    ),
+  );
+  assert.throws(
+    () => prepareMotion({ id, brief: "A short character film" }),
+    (e) => e.code === "SOURCE_ONLY",
+  );
+});
+
 test("invalid IDs and unsupported or malformed customization fail clearly", () => {
   assert.throws(
     () => getMotion("../private"),
@@ -166,4 +197,30 @@ test("twelve reproduced entries include current implementation evidence", async 
     assert.ok(r.verification.model);
     assert.ok(r.preview.url);
   }
+});
+
+test("approved character adaptation retains MIT notice and has no reproduced claim", async () => {
+  const { recipe } = getMotion("hand-painted-character-film");
+  assert.equal(recipe.provenance.creator, "John Heibel");
+  assert.equal(recipe.rights.license, "MIT");
+  assert.equal(
+    recipe.provenance.revision,
+    "0ac8bf2b31942376cb6b8c4074715595d512acd2",
+  );
+  assert.ok(recipe.rights.licenseUrl.endsWith("/LICENSE"));
+  assert.equal(recipe.verification.status, "not-reproduced");
+  assert.ok(
+    prepareMotion({
+      id: recipe.id,
+      brief: "An original fox mascot",
+    }).prompt.includes("An original fox mascot"),
+  );
+  assert.ok(
+    (
+      await readFile(
+        new URL("../licenses/ClaudeAnimationBase-MIT.txt", import.meta.url),
+        "utf8",
+      )
+    ).includes("Copyright (c) 2026 John Heibel"),
+  );
 });

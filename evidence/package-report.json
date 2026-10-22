@@ -1,10 +1,9 @@
 {
-  "checkedAt": "2026-10-22T20:59:26.405Z",
-  "snapshot": "2026-10-22.105bd97e16a9",
-  "endpoint": "https://cave-motion.darkknightcave.workers.dev/mcp",
-  "package": "@darkknightcave/motion-mcp@0.1.0",
-  "installation": "npm install --offline --ignore-scripts",
-  "transport": "stdio from installed tarball",
+  "checkedAt": "2026-10-22T22:53:50.451Z",
+  "snapshot": "2026-10-22.a82e12098f76",
+  "package": "@darkknightcave/motion-mcp@0.1.2",
+  "installation": "website installed from the version-pinned local tarball; npm and Yarn locks synchronized",
+  "transport": "stdio from installed tarball; no network used by the server",
   "passed": [
     "discovery",
     "search",
@@ -12,8 +11,8 @@
     "prepare",
     "prompt",
     "resource",
-    "new-account preview URL"
+    "approved imported recipe MIT attribution"
   ],
-  "tarballBytes": 811975,
-  "sha256": "7ee88c968098abda080f57f0744f5341b5edcb9941e4f46af0f4cca3ac8c4cdb"
+  "tarballBytes": 824006,
+  "sha256": "7ffb9d9f859643ca84309035d86882671be65859e8070463ad8a6cec19787f3a"
 }

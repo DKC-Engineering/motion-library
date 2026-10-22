@@ -1,8 +1,8 @@
 # DarkKnight Cave Motion Library
 
 Search motion recipes and prepare a prompt for your coding agent. The initial
-catalog has 50 original DKC recipes, 12 browser-checked reference builds, and
-four links to external source collections. It covers interface motion, product
+catalog has 50 original DKC recipes, one approved MIT adaptation, 12
+browser-checked reference builds, and five links to external source repositories. It covers interface motion, product
 films, explainers, and procedural scenes.
 
 The server returns instructions and requirements. Your coding agent implements

@@ -1,6 +1,7 @@
 import { createMcpHandler } from "agents/mcp/server";
 import { createServer } from "./server.js";
 import { snapshot, catalog } from "./core.js";
+import { limitAndBufferRequest } from "./request-guard.js";
 
 interface Env {
   MOTION_RATE_LIMITER: {
@@ -16,7 +17,6 @@ interface Env {
   PUBLIC_HOST: string;
   ENABLED?: string;
 }
-const MAX_BYTES = 24_576;
 const json = (data: object, status = 200) =>
   Response.json(data, {
     status,
@@ -71,61 +71,13 @@ const worker = {
       ].includes(origin)
     )
       return json({ error: "Origin not allowed." }, 403);
-    if (request.method === "POST") {
-      if (
-        !(request.headers.get("content-type") ?? "")
-          .toLowerCase()
-          .includes("application/json")
-      )
-        return json({ error: "Use application/json." }, 415);
-      if (Number(request.headers.get("content-length") ?? 0) > MAX_BYTES)
-        return json({ error: "Request too large." }, 413);
-      const reader = request.body?.getReader();
-      if (!reader) return json({ error: "Request body required." }, 400);
-      const chunks: Uint8Array[] = [];
-      let length = 0;
-      try {
-        while (true) {
-          const { done, value } = await reader.read();
-          if (done) break;
-          length += value.byteLength;
-          if (length > MAX_BYTES) {
-            await reader.cancel();
-            return json({ error: "Request too large." }, 413);
-          }
-          chunks.push(value);
-        }
-      } catch {
-        return json({ error: "Unable to read request." }, 400);
-      }
-      const body = new Uint8Array(length);
-      let offset = 0;
-      for (const chunk of chunks) {
-        body.set(chunk, offset);
-        offset += chunk.length;
-      }
-      request = new Request(request.url, {
-        method: "POST",
-        headers: request.headers,
-        body,
-      });
-    }
-    const ip =
-      request.headers.get("cf-connecting-ip") ?? (local ? "local" : "unknown");
-    if (!env.MOTION_RATE_LIMITER)
-      return json({ error: "Rate limiter is not configured." }, 503);
-    const { success } = await env.MOTION_RATE_LIMITER.limit({ key: ip });
-    if (!success)
-      return new Response(
-        JSON.stringify({
-          error:
-            "Rate limit reached. Retry in a minute or use the local package.",
-        }),
-        {
-          status: 429,
-          headers: { "content-type": "application/json", "retry-after": "60" },
-        },
-      );
+    const guarded = await limitAndBufferRequest(
+      request,
+      env.MOTION_RATE_LIMITER,
+      request.headers.get("cf-connecting-ip") ?? (local ? "local" : "unknown"),
+    );
+    if (guarded instanceof Response) return guarded;
+    request = guarded;
     const handler = createMcpHandler(
       () =>
         createServer((metric) => {

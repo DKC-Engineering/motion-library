@@ -1,11 +1,11 @@
 {
   "name": "@darkknightcave/motion-mcp",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "mcpName": "co.darkknightcave/motion",
   "publishConfig": {
     "access": "public"
   },
-  "description": "Search and prepare original, attributed motion recipes for coding agents.",
+  "description": "Search and prepare attributed motion recipes for coding agents.",
   "repository": {
     "type": "git",
     "url": "https://github.com/DKC-Engineering/motion-library.git"
@@ -57,7 +57,8 @@
     "LICENSE-CONTENT",
     "NOTICE",
     "server.json",
-    "wrangler.jsonc"
+    "wrangler.jsonc",
+    "licenses"
   ],
   "scripts": {
     "catalog": "node scripts/build-catalog.mjs",

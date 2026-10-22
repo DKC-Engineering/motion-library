@@ -3,7 +3,9 @@
 Checked on 2026-10-22. All four repositories are now discovery sources. These
 notes record candidate material and published license boundaries. They do not
 approve any prompt, character, asset or media for redistribution. The callable
-catalog still contains the same 50 original DKC recipes.
+catalog contains 50 original DKC recipes and one maintainer-approved MIT
+adaptation from Claude Animation Base. A source-only reference remains
+available through opt-in MCP search.
 
 | Source                                                                     | Useful material                                                         | Published rights and review boundary                                                                                 | Import priority                                          |
 | -------------------------------------------------------------------------- | ----------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
@@ -58,11 +60,34 @@ and [MIT license](https://github.com/mexicat/pdoom-video/blob/fa164b74fd0b26a993
 
 Revision: `0ac8bf2b31942376cb6b8c4074715595d512acd2`.
 
-Discovery inventories `ANIMATION_GUIDE.md`. Review and adapt a complete workflow
+Discovery inventories `ANIMATION_GUIDE.md`. The follow-up review also read
+`README.md`, `LICENSE`, `package.json`, `studio.html` and `render.mjs` at this
+revision. The latest upstream commit still matches the pinned revision.
+
+Review and adapt a complete workflow
 around supplied characters. State Node.js, Chrome, ffmpeg, p5.js and p5.brush
 requirements. The README warns that watercolor rendering can be slow without
 a dedicated GPU; record that limitation and test the adapted recipe locally.
 Preserve John Heibel's MIT notice with any imported material.
+
+The renderer launches Chrome with `--no-sandbox` on Linux and allows local-file
+access. Its crop expressions are evaluated inside the browser page. Do not pass
+untrusted expressions or render repositories with access to secrets. Prefer a
+sandboxed browser; if the upstream Linux route is required, isolate it in a
+disposable environment. `studio.html` also loads a Google font remotely; replace
+or vendor it for an offline build after reviewing its license. No renderer code,
+characters, model sheets, fonts, media or original guide text is redistributed
+in the MCP.
+
+The public entry is `reference-claude-animation-base`. Use
+`search_motion` with `includeReferences: true` and a query such as
+`p5 brush hand-drawn character`, then `get_motion` to follow the source.
+The source link is unavailable to `prepare_motion`. The maintainer explicitly
+approved the supplied-mascot candidate on 2026-10-22. Its callable adaptation is
+`hand-painted-character-film`, with the source revision, MIT notice and review
+record in `catalog/approved-imports.json`. It has not been reproduced. No full
+original guide is distributed. The local review artifact remains under ignored
+`review/`; the approved entry and notice ship with the package.
 
 Evidence: [README](https://github.com/JohnHeibel/ClaudeAnimationBase/blob/0ac8bf2b31942376cb6b8c4074715595d512acd2/README.md)
 and [MIT license](https://github.com/JohnHeibel/ClaudeAnimationBase/blob/0ac8bf2b31942376cb6b8c4074715595d512acd2/LICENSE).

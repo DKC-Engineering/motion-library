@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-10-22T22:46:36.199Z",
+  "endpoint": "https://cave-motion.darkknightcave.workers.dev/mcp",
+  "snapshot": "2026-10-22.a82e12098f76",
+  "recipeId": "hand-painted-character-film",
+  "license": "MIT",
+  "creator": "John Heibel",
+  "verification": "not-reproduced",
+  "passed": [
+    "production search",
+    "get recipe",
+    "prepare prompt",
+    "MIT attribution",
+    "no reproduction claim"
+  ],
+  "rendersPerformed": 0
+}

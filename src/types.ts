@@ -31,7 +31,12 @@ export type Recipe = {
     kind: string;
     note: string;
   };
-  rights: { status: string; license: string; attribution: string };
+  rights: {
+    status: string;
+    license: string;
+    attribution: string;
+    licenseUrl?: string;
+  };
   verification: {
     status: string;
     date?: string;

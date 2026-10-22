@@ -1,10 +1,10 @@
 {
-  "checkedAt": "2026-10-22T21:34:23.143Z",
+  "checkedAt": "2026-10-22T22:42:18.620Z",
   "browser": "Chromium",
   "desktop": "1440x1050",
   "mobile": "390x844",
   "passed": [
-    "50 static recipes",
+    "51 static recipes",
     "12 reproduced filter",
     "on-demand iframe loading",
     "search and category filters",
@@ -12,7 +12,8 @@
     "mocked project brief attribution",
     "empty state recovery",
     "mobile overflow",
-    "installation page"
+    "installation page",
+    "imported recipe MIT license and attribution"
   ],
   "emailDelivery": "mocked; no email sent",
   "nativeEditorClients": "not tested"

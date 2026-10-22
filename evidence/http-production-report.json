@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-10-22T20:56:02.910Z",
+  "checkedAt": "2026-10-22T22:45:22.819Z",
   "endpoint": "https://cave-motion.darkknightcave.workers.dev/mcp",
-  "snapshot": "2026-10-22.105bd97e16a9",
+  "snapshot": "2026-10-22.a82e12098f76",
   "transport": "Streamable HTTP",
   "runtime": "deployed",
   "protocol": "passed",
   "warmSearchSamples": 60,
-  "p95Milliseconds": 99.8,
+  "p95Milliseconds": 114.51,
   "requestLimits": "passed",
   "rateLimitBurst": "not run (smoke mode)",
   "nativeEditorClients": "not tested by this protocol script"

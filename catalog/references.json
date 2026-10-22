@@ -1,6 +1,73 @@
 [
-  {"id":"reference-yihui-opus-videos","title":"Awesome Opus 5.5 Videos","summary":"A creator-attributed collection of coded motion examples. Review the original post and entry rights before reusing material.","url":"https://github.com/yihui-dev/awesome-opus5-5-videos","tags":["motion","film","canvas","svg","threejs"],"reason":"Third-party creator rights require entry-level review."},
-  {"id":"reference-opusvideo","title":"Awesome Claude Video","summary":"Community video examples and implementation guides. This entry links to the source collection; it does not redistribute its prompts.","url":"https://github.com/opusvideo/awesome-claude-video","tags":["film","explainer","animation"],"reason":"No blanket redistribution permission established."},
-  {"id":"reference-guanmo","title":"Awesome AI Motion","summary":"A motion gallery with creator credits and explicit third-party rights boundaries. Follow the original links for each work.","url":"https://github.com/guanmo-ai/awesome-ai-motion","tags":["motion","3d","canvas","ui"],"reason":"Its MIT license explicitly excludes third-party prompts and media."},
-  {"id":"reference-tripo","title":"Awesome Opus 5.5 Prompts","summary":"A collection of creative coding examples. Its rights policy separates original tooling from third-party prompts and media.","url":"https://github.com/TripoGrowthLab/awesome-opus-5-5-prompts","tags":["3d","film","motion","prompts"],"reason":"Its MIT license does not relicense third-party prompts or media."}
+  {
+    "id": "reference-yihui-opus-videos",
+    "title": "Awesome Opus 5.5 Videos",
+    "summary": "A creator-attributed collection of coded motion examples. Review the original post and entry rights before reusing material.",
+    "url": "https://github.com/yihui-dev/awesome-opus5-5-videos",
+    "tags": [
+      "motion",
+      "film",
+      "canvas",
+      "svg",
+      "threejs"
+    ],
+    "reason": "Third-party creator rights require entry-level review."
+  },
+  {
+    "id": "reference-opusvideo",
+    "title": "Awesome Claude Video",
+    "summary": "Community video examples and implementation guides. This entry links to the source collection; it does not redistribute its prompts.",
+    "url": "https://github.com/opusvideo/awesome-claude-video",
+    "tags": [
+      "film",
+      "explainer",
+      "animation"
+    ],
+    "reason": "No blanket redistribution permission established."
+  },
+  {
+    "id": "reference-guanmo",
+    "title": "Awesome AI Motion",
+    "summary": "A motion gallery with creator credits and explicit third-party rights boundaries. Follow the original links for each work.",
+    "url": "https://github.com/guanmo-ai/awesome-ai-motion",
+    "tags": [
+      "motion",
+      "3d",
+      "canvas",
+      "ui"
+    ],
+    "reason": "Its MIT license explicitly excludes third-party prompts and media."
+  },
+  {
+    "id": "reference-tripo",
+    "title": "Awesome Opus 5.5 Prompts",
+    "summary": "A collection of creative coding examples. Its rights policy separates original tooling from third-party prompts and media.",
+    "url": "https://github.com/TripoGrowthLab/awesome-opus-5-5-prompts",
+    "tags": [
+      "3d",
+      "film",
+      "motion",
+      "prompts"
+    ],
+    "reason": "Its MIT license does not relicense third-party prompts or media."
+  },
+  {
+    "id": "reference-claude-animation-base",
+    "title": "Claude Animation Base",
+    "summary": "John Heibel’s p5.js and p5.brush starter for hand-painted character films, with an animation guide and a local rendering workflow.",
+    "url": "https://github.com/JohnHeibel/ClaudeAnimationBase/tree/0ac8bf2b31942376cb6b8c4074715595d512acd2",
+    "tags": [
+      "character",
+      "mascot",
+      "hand-drawn",
+      "watercolor",
+      "p5",
+      "p5.js",
+      "p5.brush",
+      "film",
+      "canvas",
+      "animation"
+    ],
+    "reason": "Full starter and assets remain upstream. The approved hand-painted-character-film adaptation is callable under MIT. Local rendering needs Node.js, Chrome and ffmpeg; the upstream Linux renderer disables Chrome’s sandbox."
+  }
 ]
