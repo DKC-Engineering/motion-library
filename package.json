@@ -1,28 +1,24 @@
 {
   "name": "@darkknightcave/motion-mcp",
   "version": "0.1.2",
-  "mcpName": "co.darkknightcave/motion",
-  "publishConfig": {
-    "access": "public"
-  },
   "description": "Search and prepare attributed motion recipes for coding agents.",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/DKC-Engineering/motion-library.git"
-  },
+  "keywords": [
+    "mcp",
+    "claude",
+    "ai",
+    "agents"
+  ],
+  "homepage": "https://darkknightcave.co/labs/motion-library",
   "bugs": {
     "url": "https://github.com/DKC-Engineering/motion-library/issues"
   },
-  "homepage": "https://darkknightcave.co/labs/motion-library",
-  "type": "module",
-  "types": "./dist/src/core.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DKC-Engineering/motion-library.git"
+  },
   "license": "MIT",
-  "engines": {
-    "node": ">=22"
-  },
-  "bin": {
-    "cave-motion": "dist/src/stdio.js"
-  },
+  "author": "darkknightcaveco",
+  "type": "module",
   "exports": {
     ".": {
       "types": "./dist/src/core.d.ts",
@@ -40,24 +36,24 @@
     "./recipe-ids": "./catalog/recipe-ids.json",
     "./package.json": "./package.json"
   },
+  "types": "./dist/src/core.d.ts",
+  "bin": {
+    "cave-motion": "dist/src/stdio.js"
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
   "files": [
     "dist",
     "catalog",
-    "demos",
     "public",
     "docs",
     "skills",
-    "src",
-    "scripts",
-    "test",
-    "evidence",
-    "tsconfig.json",
     "CONTRIBUTING.md",
     "LICENSE",
     "LICENSE-CONTENT",
     "NOTICE",
-    "server.json",
-    "wrangler.jsonc",
     "licenses"
   ],
   "scripts": {
@@ -86,5 +82,12 @@
     "playwright": "1.64.1",
     "typescript": "7.0.2",
     "wrangler": "4.152.0"
-  }
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "mcpName": "co.darkknightcave/motion"
 }
