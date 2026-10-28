@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "snapshot": "2026-10-22.a82e12098f76",
+  "snapshot": "2026-10-22.180a193935f1",
   "updatedAt": "2026-10-22",
   "recipes": [
     {
@@ -64,7 +64,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -75,7 +75,7 @@
       },
       "verification": {
         "status": "reproduced",
-        "date": "2026-10-22",
+        "date": "2026-10-23",
         "model": "Codex; model identifier not exposed in the build environment",
         "stack": "HTML/CSS",
         "recipeVersion": "1.0.0",
@@ -156,7 +156,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -167,7 +167,7 @@
       },
       "verification": {
         "status": "reproduced",
-        "date": "2026-10-22",
+        "date": "2026-10-23",
         "model": "Codex; model identifier not exposed in the build environment",
         "stack": "HTML/CSS",
         "recipeVersion": "1.0.0",
@@ -247,7 +247,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -258,7 +258,7 @@
       },
       "verification": {
         "status": "reproduced",
-        "date": "2026-10-22",
+        "date": "2026-10-23",
         "model": "Codex; model identifier not exposed in the build environment",
         "stack": "HTML/CSS",
         "recipeVersion": "1.0.0",
@@ -339,7 +339,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -417,7 +417,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -495,7 +495,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -573,7 +573,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -652,7 +652,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -731,7 +731,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -810,7 +810,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -888,7 +888,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -967,7 +967,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -1046,7 +1046,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -1126,7 +1126,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -1137,7 +1137,7 @@
       },
       "verification": {
         "status": "reproduced",
-        "date": "2026-10-22",
+        "date": "2026-10-23",
         "model": "Codex; model identifier not exposed in the build environment",
         "stack": "Canvas 2D",
         "recipeVersion": "1.0.0",
@@ -1219,7 +1219,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -1230,7 +1230,7 @@
       },
       "verification": {
         "status": "reproduced",
-        "date": "2026-10-22",
+        "date": "2026-10-23",
         "model": "Codex; model identifier not exposed in the build environment",
         "stack": "Canvas 2D",
         "recipeVersion": "1.0.0",
@@ -1312,7 +1312,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -1323,7 +1323,7 @@
       },
       "verification": {
         "status": "reproduced",
-        "date": "2026-10-22",
+        "date": "2026-10-23",
         "model": "Codex; model identifier not exposed in the build environment",
         "stack": "Canvas 2D",
         "recipeVersion": "1.0.0",
@@ -1404,7 +1404,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -1483,7 +1483,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -1562,7 +1562,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -1641,7 +1641,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -1720,7 +1720,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -1799,7 +1799,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -1878,7 +1878,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -1957,7 +1957,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -2035,7 +2035,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -2115,7 +2115,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -2126,7 +2126,7 @@
       },
       "verification": {
         "status": "reproduced",
-        "date": "2026-10-22",
+        "date": "2026-10-23",
         "model": "Codex; model identifier not exposed in the build environment",
         "stack": "Canvas 2D",
         "recipeVersion": "1.0.0",
@@ -2208,7 +2208,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -2219,7 +2219,7 @@
       },
       "verification": {
         "status": "reproduced",
-        "date": "2026-10-22",
+        "date": "2026-10-23",
         "model": "Codex; model identifier not exposed in the build environment",
         "stack": "Canvas 2D",
         "recipeVersion": "1.0.0",
@@ -2301,7 +2301,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -2380,7 +2380,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -2459,7 +2459,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -2538,7 +2538,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -2617,7 +2617,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -2696,7 +2696,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -2775,7 +2775,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -2854,7 +2854,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -2933,7 +2933,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -2944,7 +2944,7 @@
       },
       "verification": {
         "status": "reproduced",
-        "date": "2026-10-22",
+        "date": "2026-10-23",
         "model": "Codex; model identifier not exposed in the build environment",
         "stack": "Canvas 2D",
         "recipeVersion": "1.0.0",
@@ -3025,7 +3025,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -3036,7 +3036,7 @@
       },
       "verification": {
         "status": "reproduced",
-        "date": "2026-10-22",
+        "date": "2026-10-23",
         "model": "Codex; model identifier not exposed in the build environment",
         "stack": "Canvas 2D",
         "recipeVersion": "1.0.0",
@@ -3118,7 +3118,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -3129,7 +3129,7 @@
       },
       "verification": {
         "status": "reproduced",
-        "date": "2026-10-22",
+        "date": "2026-10-23",
         "model": "Codex; model identifier not exposed in the build environment",
         "stack": "Canvas 2D",
         "recipeVersion": "1.0.0",
@@ -3211,7 +3211,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -3222,7 +3222,7 @@
       },
       "verification": {
         "status": "reproduced",
-        "date": "2026-10-22",
+        "date": "2026-10-23",
         "model": "Codex; model identifier not exposed in the build environment",
         "stack": "Canvas 2D",
         "recipeVersion": "1.0.0",
@@ -3304,7 +3304,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -3384,7 +3384,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -3464,7 +3464,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -3543,7 +3543,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -3623,7 +3623,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -3703,7 +3703,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -3783,7 +3783,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -3862,7 +3862,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -3941,7 +3941,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -4020,7 +4020,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -4099,7 +4099,7 @@
       "provenance": {
         "creator": "DarkKnight Cave",
         "url": "https://darkknightcave.co/labs/motion-library",
-        "revision": "sha256:dfbe6519cbc4fc84acc4cbf926d8a01c7f2e248dd46cedd67a9112b0e928c2ba",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
         "kind": "original",
         "note": "Original DKC recipe. No third-party prompt is reproduced."
       },
@@ -4116,6 +4116,93 @@
         "note": "Prompt recipe; no reproduced preview yet."
       },
       "url": "https://darkknightcave.co/labs/motion-library/light-tunnel"
+    },
+    {
+      "id": "video-background-hero",
+      "version": "1.0.0",
+      "title": "Video background hero",
+      "category": "ui",
+      "stack": "css",
+      "summary": "A responsive website hero with an optimized looping background video, accessible poster fallback, and high-contrast typography.",
+      "tags": [
+        "hero",
+        "video",
+        "videos",
+        "background",
+        "website",
+        "landing",
+        "cinematic",
+        "mp4",
+        "poster",
+        "rose",
+        "sakura",
+        "bat",
+        "garden"
+      ],
+      "availability": "callable",
+      "parameters": {
+        "accent": {
+          "type": "color",
+          "default": "#b8492e",
+          "description": "One six-digit hexadecimal accent color."
+        },
+        "duration": {
+          "type": "number",
+          "default": 2,
+          "min": 1,
+          "max": 60,
+          "description": "Sequence duration in seconds; retain interaction timings for UI."
+        },
+        "aspectRatio": {
+          "type": "enum",
+          "default": "16:9",
+          "values": [
+            "16:9",
+            "9:16",
+            "1:1"
+          ],
+          "description": "Output framing."
+        }
+      },
+      "prompt": "Build a responsive website hero using a native HTML video element behind real heading text, supporting copy, and a call to action. Use permitted footage from the darkknight cave-motion-assets catalog (e.g., sakura-garden, bat-flight, or rose-bloom) or user-supplied footage. Set muted, playsInline, loop, and object-fit: cover. Attach video sources only when visible and reduced motion is off; show a high-resolution poster still first. Provide a keyboard-accessible play/pause toggle. Add a dark radial gradient overlay for text readability without obscuring background motion. Pause playback via IntersectionObserver when offscreen.",
+      "steps": [
+        "Confirm the supplied content, target environment, and required assets before implementing.",
+        "Build a responsive website hero using a native HTML video element behind real heading text, supporting copy, and a call to action. Use permitted footage from the darkknight cave-motion-assets catalog (e.g., sakura-garden, bat-flight, or rose-bloom) or user-supplied footage. Set muted, playsInline, loop, and object-fit: cover. Attach video sources only when visible and reduced motion is off; show a high-resolution poster still first. Provide a keyboard-accessible play/pause toggle. Add a dark radial gradient overlay for text readability without obscuring background motion. Pause playback via IntersectionObserver when offscreen.",
+        "Implement idle, active, keyboard, touch, reduced-motion, and failure states as relevant.",
+        "Inspect the opening, midpoint, and final state at desktop and mobile sizes; report any dependency or output limitation."
+      ],
+      "requirements": {
+        "dependencies": [
+          "A browser supporting modern CSS"
+        ],
+        "assets": [
+          "Supply final text, real data, and cleared product assets where requested."
+        ]
+      },
+      "limitations": [
+        "Video files are hosted externally in R2; the recipe provides implementation instructions only. Verify contrast, mobile crop, and reduced-motion fallback.",
+        "The prompt guides a coding agent; output quality depends on its implementation and review."
+      ],
+      "provenance": {
+        "creator": "DarkKnight Cave",
+        "url": "https://darkknightcave.co/labs/motion-library",
+        "revision": "sha256:4b8b710181651607ffe839df589a9bcbcc4432a8417ceb4751175b4a67848dcd",
+        "kind": "original",
+        "note": "Original DKC recipe. No third-party prompt is reproduced."
+      },
+      "rights": {
+        "status": "cleared",
+        "license": "CC-BY-4.0",
+        "attribution": "Motion recipe by DarkKnight Cave — https://darkknightcave.co/labs/motion-library"
+      },
+      "verification": {
+        "status": "not-reproduced"
+      },
+      "preview": {
+        "kind": "none",
+        "note": "Prompt recipe; no reproduced preview yet."
+      },
+      "url": "https://darkknightcave.co/labs/motion-library/video-background-hero"
     },
     {
       "id": "hand-painted-character-film",
