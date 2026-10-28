@@ -1,6 +1,6 @@
 {
   "name": "@darkknightcave/motion-mcp",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Search and prepare attributed motion recipes for coding agents.",
   "keywords": [
     "mcp",
